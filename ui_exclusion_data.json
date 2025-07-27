@@ -1,0 +1,9503 @@
+{
+  "extraction_metadata": {
+    "video_path": "/workspace/wisp summon example.mp4",
+    "frames_analyzed": 7,
+    "focus_area": "ui_element_exclusion",
+    "extraction_method": "negative_example_analysis"
+  },
+  "ui_analysis": {
+    "ui_regions": [
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1610.4307493055558,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1615.3039580246914,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6025.860170390776,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6096.324509090909,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5542.887780354566,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6032.818796286093,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5649.7125602499955,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          603,
+          1003,
+          66,
+          75
+        ],
+        "area": 3980.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6398.472809264361,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          1782,
+          459,
+          74,
+          39
+        ],
+        "area": 1323.0,
+        "aspect_ratio": 1.8974358974358974,
+        "content_variance": 2015.3827971582652,
+        "type": "ui_element",
+        "center": [
+          1819,
+          478
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          1532,
+          459,
+          254,
+          159
+        ],
+        "area": 17389.5,
+        "aspect_ratio": 1.5974842767295598,
+        "content_variance": 2091.378393500982,
+        "type": "ui_element",
+        "center": [
+          1659,
+          538
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22719.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1537.111900837052,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "bbox": [
+          928,
+          76,
+          63,
+          54
+        ],
+        "area": 1699.5,
+        "aspect_ratio": 1.1666666666666667,
+        "content_variance": 5189.897781278848,
+        "type": "ui_element",
+        "center": [
+          959,
+          103
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1576.8842881944447,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1572.668255478395,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6019.18354600551,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5481.899873081464,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5982.172318089991,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5594.858857405221,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          603,
+          1003,
+          66,
+          75
+        ],
+        "area": 3978.5,
+        "aspect_ratio": 0.88,
+        "content_variance": 6305.877772839507,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          1657,
+          459,
+          129,
+          159
+        ],
+        "area": 2474.5,
+        "aspect_ratio": 0.8113207547169812,
+        "content_variance": 1592.3708853535477,
+        "type": "ui_element",
+        "center": [
+          1721,
+          538
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22723.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1544.1164162690168,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "bbox": [
+          938,
+          76,
+          46,
+          46
+        ],
+        "area": 1374.5,
+        "aspect_ratio": 1.0,
+        "content_variance": 4613.353664000272,
+        "type": "ui_element",
+        "center": [
+          961,
+          99
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1563.7917462191358,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1577.0141972222223,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5960.262643607794,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4053.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6034.120543454748,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5491.593759299863,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5975.884893378227,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5594.0569365266765,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          603,
+          1003,
+          66,
+          75
+        ],
+        "area": 3980.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6319.5215414345475,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          1657,
+          459,
+          129,
+          159
+        ],
+        "area": 1979.5,
+        "aspect_ratio": 0.8113207547169812,
+        "content_variance": 1600.8167255537217,
+        "type": "ui_element",
+        "center": [
+          1721,
+          538
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "bbox": [
+          928,
+          76,
+          64,
+          54
+        ],
+        "area": 1648.0,
+        "aspect_ratio": 1.1851851851851851,
+        "content_variance": 5577.747433927979,
+        "type": "ui_element",
+        "center": [
+          960,
+          103
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1572.65009066358,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1587.1770270833329,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5973.709420834608,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6044.035862626261,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5501.074011871967,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5982.6109876543205,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5589.49500810517,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          601,
+          1003,
+          70,
+          75
+        ],
+        "area": 4419.0,
+        "aspect_ratio": 0.9333333333333333,
+        "content_variance": 9212.857816562357,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          1591,
+          459,
+          195,
+          124
+        ],
+        "area": 1346.5,
+        "aspect_ratio": 1.5725806451612903,
+        "content_variance": 1618.3727547871251,
+        "type": "ui_element",
+        "center": [
+          1688,
+          521
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          759,
+          217,
+          402,
+          86
+        ],
+        "area": 31368.5,
+        "aspect_ratio": 4.674418604651163,
+        "content_variance": 1223.434127964506,
+        "type": "ui_element",
+        "center": [
+          960,
+          260
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22725.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1540.939632397343,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "bbox": [
+          928,
+          76,
+          64,
+          54
+        ],
+        "area": 1647.5,
+        "aspect_ratio": 1.1851851851851851,
+        "content_variance": 5578.21118658037,
+        "type": "ui_element",
+        "center": [
+          960,
+          103
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1581.7391358024695,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1586.6855999228396,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5959.061900173452,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6050.646607489032,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5514.071038539382,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5978.296570390778,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5603.092990901595,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          601,
+          1003,
+          70,
+          75
+        ],
+        "area": 4419.0,
+        "aspect_ratio": 0.9333333333333333,
+        "content_variance": 9212.566625705214,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          906,
+          573,
+          151,
+          158
+        ],
+        "area": 4894.0,
+        "aspect_ratio": 0.9556962025316456,
+        "content_variance": 305.40200379138474,
+        "type": "ui_element",
+        "center": [
+          981,
+          652
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          1657,
+          459,
+          129,
+          158
+        ],
+        "area": 1752.0,
+        "aspect_ratio": 0.8164556962025317,
+        "content_variance": 1605.2399890575919,
+        "type": "ui_element",
+        "center": [
+          1721,
+          538
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          759,
+          199,
+          402,
+          122
+        ],
+        "area": 45636.5,
+        "aspect_ratio": 3.2950819672131146,
+        "content_variance": 1003.7447909398384,
+        "type": "ui_element",
+        "center": [
+          960,
+          260
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22722.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1538.2524367111148,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "bbox": [
+          928,
+          76,
+          64,
+          54
+        ],
+        "area": 1447.0,
+        "aspect_ratio": 1.1851851851851851,
+        "content_variance": 5580.671906815307,
+        "type": "ui_element",
+        "center": [
+          960,
+          103
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1581.5734432098766,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1587.2894128858024,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5958.101548168555,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6046.029456749312,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5514.492131847229,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5975.421343985308,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5605.068866587958,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          601,
+          1003,
+          70,
+          75
+        ],
+        "area": 4419.0,
+        "aspect_ratio": 0.9333333333333333,
+        "content_variance": 9212.452946902493,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          1657,
+          459,
+          129,
+          158
+        ],
+        "area": 1753.5,
+        "aspect_ratio": 0.8164556962025317,
+        "content_variance": 1605.2393873715018,
+        "type": "ui_element",
+        "center": [
+          1721,
+          538
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          759,
+          199,
+          402,
+          122
+        ],
+        "area": 45636.5,
+        "aspect_ratio": 3.2950819672131146,
+        "content_variance": 1003.8242335664911,
+        "type": "ui_element",
+        "center": [
+          960,
+          260
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22722.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1539.1407216310831,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "bbox": [
+          928,
+          76,
+          64,
+          54
+        ],
+        "area": 1636.5,
+        "aspect_ratio": 1.1851851851851851,
+        "content_variance": 5581.075689538189,
+        "type": "ui_element",
+        "center": [
+          960,
+          103
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          1254,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1581.2373777777784,
+        "type": "ui_element",
+        "center": [
+          1284,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          966,
+          1010,
+          60,
+          60
+        ],
+        "area": 3463.0,
+        "aspect_ratio": 1.0,
+        "content_variance": 1586.1551369598762,
+        "type": "ui_element",
+        "center": [
+          996,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          1107,
+          1003,
+          66,
+          75
+        ],
+        "area": 4054.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5959.008498275686,
+        "type": "ui_element",
+        "center": [
+          1140,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          891,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 6049.115086215692,
+        "type": "ui_element",
+        "center": [
+          924,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          819,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5515.458491032777,
+        "type": "ui_element",
+        "center": [
+          852,
+          1038
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          747,
+          1003,
+          66,
+          75
+        ],
+        "area": 4052.0,
+        "aspect_ratio": 0.88,
+        "content_variance": 5976.54480661157,
+        "type": "ui_element",
+        "center": [
+          780,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          675,
+          1003,
+          66,
+          70
+        ],
+        "area": 3956.0,
+        "aspect_ratio": 0.9428571428571428,
+        "content_variance": 5607.015938419446,
+        "type": "ui_element",
+        "center": [
+          708,
+          1038
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          601,
+          1003,
+          70,
+          75
+        ],
+        "area": 4419.0,
+        "aspect_ratio": 0.9333333333333333,
+        "content_variance": 9214.830987609977,
+        "type": "ui_element",
+        "center": [
+          636,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          1048,
+          590,
+          50,
+          46
+        ],
+        "area": 1214.5,
+        "aspect_ratio": 1.0869565217391304,
+        "content_variance": 6066.295141020794,
+        "type": "ui_element",
+        "center": [
+          1073,
+          613
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          1657,
+          459,
+          129,
+          158
+        ],
+        "area": 1723.5,
+        "aspect_ratio": 0.8164556962025317,
+        "content_variance": 1605.5076829918778,
+        "type": "ui_element",
+        "center": [
+          1721,
+          538
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          759,
+          199,
+          402,
+          122
+        ],
+        "area": 45636.5,
+        "aspect_ratio": 3.2950819672131146,
+        "content_variance": 848.8339002992417,
+        "type": "ui_element",
+        "center": [
+          960,
+          260
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          19,
+          87,
+          322,
+          72
+        ],
+        "area": 22722.0,
+        "aspect_ratio": 4.472222222222222,
+        "content_variance": 1539.2096754614777,
+        "type": "ui_element",
+        "center": [
+          180,
+          123
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "bbox": [
+          936,
+          76,
+          48,
+          49
+        ],
+        "area": 1389.0,
+        "aspect_ratio": 0.9795918367346939,
+        "content_variance": 5096.377151700391,
+        "type": "ui_element",
+        "center": [
+          960,
+          100
+        ]
+      }
+    ],
+    "persistent_text": [
+      {
+        "timestamp": 1.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "USA",
+        "confidence": 96,
+        "bbox": [
+          459,
+          23,
+          18,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          468,
+          28
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "wil",
+        "confidence": 72,
+        "bbox": [
+          483,
+          14,
+          12,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          28
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "pv_JUN_24_04:",
+        "confidence": 87,
+        "bbox": [
+          576,
+          23,
+          100,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          626,
+          29
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Od",
+        "confidence": 82,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "12h",
+        "confidence": 87,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "56m",
+        "confidence": 91,
+        "bbox": [
+          442,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          454,
+          46
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "||",
+        "confidence": 78,
+        "bbox": [
+          471,
+          40,
+          5,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          473,
+          47
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "09:2425",
+        "confidence": 92,
+        "bbox": [
+          482,
+          41,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          46
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "JUN",
+        "confidence": 87,
+        "bbox": [
+          534,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          546,
+          46
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Autumn,",
+        "confidence": 79,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "1591",
+        "confidence": 91,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "CE",
+        "confidence": 95,
+        "bbox": [
+          663,
+          41,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          670,
+          46
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Goated",
+        "confidence": 91,
+        "bbox": [
+          399,
+          3,
+          147,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          472,
+          10
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Brass",
+        "confidence": 92,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Ixatet",
+        "confidence": 77,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "2364059163:B]14",
+        "confidence": 48,
+        "bbox": [
+          721,
+          20,
+          112,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          777,
+          27
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "[Lv.20]",
+        "confidence": 88,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Books",
+        "confidence": 92,
+        "bbox": [
+          35,
+          798,
+          107,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          88,
+          803
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "&",
+        "confidence": 93,
+        "bbox": [
+          80,
+          788,
+          6,
+          31
+        ],
+        "is_ui_text": false,
+        "center": [
+          83,
+          803
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Schematics",
+        "confidence": 86,
+        "bbox": [
+          93,
+          798,
+          71,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          128,
+          803
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "6",
+        "confidence": 74,
+        "bbox": [
+          641,
+          801,
+          7,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          805
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Quest",
+        "confidence": 94,
+        "bbox": [
+          35,
+          884,
+          37,
+          27
+        ],
+        "is_ui_text": false,
+        "center": [
+          53,
+          897
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Items",
+        "confidence": 92,
+        "bbox": [
+          77,
+          893,
+          35,
+          11
+        ],
+        "is_ui_text": true,
+        "center": [
+          94,
+          898
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "1",
+        "confidence": 65,
+        "bbox": [
+          642,
+          896,
+          5,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          900
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "@",
+        "confidence": 62,
+        "bbox": [
+          986,
+          119,
+          18,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          995,
+          125
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "(satan",
+        "confidence": 35,
+        "bbox": [
+          993,
+          331,
+          45,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1015,
+          336
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "s",
+        "confidence": 37,
+        "bbox": [
+          1035,
+          321,
+          6,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1038,
+          335
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "75)",
+        "confidence": 47,
+        "bbox": [
+          1594,
+          197,
+          13,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1600,
+          202
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Weapons",
+        "confidence": 83,
+        "bbox": [
+          1770,
+          197,
+          51,
+          8
+        ],
+        "is_ui_text": true,
+        "center": [
+          1795,
+          201
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "x",
+        "confidence": 32,
+        "bbox": [
+          1740,
+          227,
+          9,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1744,
+          231
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "(",
+        "confidence": 32,
+        "bbox": [
+          1841,
+          232,
+          1,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          1841,
+          234
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "@@ee",
+        "confidence": 43,
+        "bbox": [
+          1509,
+          222,
+          148,
+          42
+        ],
+        "is_ui_text": false,
+        "center": [
+          1583,
+          243
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Ag",
+        "confidence": 39,
+        "bbox": [
+          1626,
+          256,
+          31,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          261
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "MIND",
+        "confidence": 65,
+        "bbox": [
+          1564,
+          275,
+          43,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          280
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "ML",
+        "confidence": 46,
+        "bbox": [
+          1519,
+          290,
+          76,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          1557,
+          296
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "ow",
+        "confidence": 43,
+        "bbox": [
+          1631,
+          290,
+          20,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          296
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "ELEMENTS",
+        "confidence": 85,
+        "bbox": [
+          1770,
+          292,
+          52,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1796,
+          296
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Inaligence",
+        "confidence": 34,
+        "bbox": [
+          1500,
+          319,
+          58,
+          33
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          335
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Wilpower",
+        "confidence": 83,
+        "bbox": [
+          1563,
+          319,
+          47,
+          33
+        ],
+        "is_ui_text": false,
+        "center": [
+          1586,
+          335
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Charisma",
+        "confidence": 77,
+        "bbox": [
+          1618,
+          319,
+          47,
+          33
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          335
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Points",
+        "confidence": 96,
+        "bbox": [
+          1486,
+          411,
+          38,
+          33
+        ],
+        "is_ui_text": false,
+        "center": [
+          1505,
+          427
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "Available:",
+        "confidence": 94,
+        "bbox": [
+          1530,
+          411,
+          55,
+          33
+        ],
+        "is_ui_text": false,
+        "center": [
+          1557,
+          427
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "text": "0",
+        "confidence": 80,
+        "bbox": [
+          1593,
+          426,
+          2,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1594,
+          430
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Goated",
+        "confidence": 90,
+        "bbox": [
+          399,
+          3,
+          147,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          472,
+          10
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Brass",
+        "confidence": 93,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Vulture@",
+        "confidence": 36,
+        "bbox": [
+          484,
+          3,
+          61,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          514,
+          10
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "\u2014_",
+        "confidence": 34,
+        "bbox": [
+          701,
+          0,
+          19,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          710,
+          12
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Daedalus",
+        "confidence": 35,
+        "bbox": [
+          722,
+          0,
+          51,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          747,
+          12
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Ixatet",
+        "confidence": 76,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "23",
+        "confidence": 74,
+        "bbox": [
+          173,
+          22,
+          18,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          182,
+          34
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "@",
+        "confidence": 91,
+        "bbox": [
+          221,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          236,
+          31
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "@",
+        "confidence": 90,
+        "bbox": [
+          258,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          273,
+          31
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "@",
+        "confidence": 78,
+        "bbox": [
+          295,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          310,
+          31
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "@",
+        "confidence": 90,
+        "bbox": [
+          332,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          347,
+          31
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "USA",
+        "confidence": 95,
+        "bbox": [
+          456,
+          12,
+          20,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          466,
+          26
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "all",
+        "confidence": 80,
+        "bbox": [
+          482,
+          22,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          488,
+          27
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "[Lv.20]",
+        "confidence": 90,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Od",
+        "confidence": 90,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "12h",
+        "confidence": 93,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "56m||",
+        "confidence": 68,
+        "bbox": [
+          442,
+          36,
+          34,
+          23
+        ],
+        "is_ui_text": false,
+        "center": [
+          459,
+          47
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "09:2425JUN",
+        "confidence": 68,
+        "bbox": [
+          483,
+          41,
+          75,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          520,
+          46
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Autumn,",
+        "confidence": 90,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "1591",
+        "confidence": 96,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "CE",
+        "confidence": 96,
+        "bbox": [
+          665,
+          41,
+          13,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          671,
+          46
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "POWER",
+        "confidence": 77,
+        "bbox": [
+          1507,
+          136,
+          41,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1527,
+          140
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "|",
+        "confidence": 58,
+        "bbox": [
+          1561,
+          146,
+          1,
+          6
+        ],
+        "is_ui_text": false,
+        "center": [
+          1561,
+          149
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Foe",
+        "confidence": 32,
+        "bbox": [
+          1814,
+          129,
+          32,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          1830,
+          141
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "a",
+        "confidence": 43,
+        "bbox": [
+          1543,
+          158,
+          28,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          1557,
+          165
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "BODY",
+        "confidence": 95,
+        "bbox": [
+          1563,
+          192,
+          21,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1573,
+          202
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "(75)",
+        "confidence": 95,
+        "bbox": [
+          1590,
+          192,
+          17,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1598,
+          202
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "WEAPONS",
+        "confidence": 72,
+        "bbox": [
+          1770,
+          192,
+          51,
+          21
+        ],
+        "is_ui_text": true,
+        "center": [
+          1795,
+          202
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "4",
+        "confidence": 80,
+        "bbox": [
+          1892,
+          187,
+          6,
+          6
+        ],
+        "is_ui_text": false,
+        "center": [
+          1895,
+          190
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "0)",
+        "confidence": 36,
+        "bbox": [
+          1525,
+          227,
+          20,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1535,
+          235
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "40)",
+        "confidence": 60,
+        "bbox": [
+          1631,
+          227,
+          26,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1644,
+          236
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "+",
+        "confidence": 91,
+        "bbox": [
+          1130,
+          240,
+          20,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          1140,
+          251
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Fordude",
+        "confidence": 39,
+        "bbox": [
+          1564,
+          255,
+          43,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          259
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "es",
+        "confidence": 53,
+        "bbox": [
+          1593,
+          276,
+          14,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1600,
+          280
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "wes",
+        "confidence": 55,
+        "bbox": [
+          1237,
+          314,
+          31,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1252,
+          319
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Intligence",
+        "confidence": 36,
+        "bbox": [
+          1504,
+          325,
+          52,
+          19
+        ],
+        "is_ui_text": false,
+        "center": [
+          1530,
+          334
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Wilpower",
+        "confidence": 83,
+        "bbox": [
+          1560,
+          323,
+          51,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          334
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Charisma",
+        "confidence": 94,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "il",
+        "confidence": 44,
+        "bbox": [
+          1883,
+          437,
+          15,
+          6
+        ],
+        "is_ui_text": false,
+        "center": [
+          1890,
+          440
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "ee)",
+        "confidence": 38,
+        "bbox": [
+          1804,
+          481,
+          51,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1829,
+          489
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Resistances",
+        "confidence": 32,
+        "bbox": [
+          1791,
+          501,
+          58,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1820,
+          505
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Books",
+        "confidence": 87,
+        "bbox": [
+          34,
+          784,
+          51,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          59,
+          796
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "&",
+        "confidence": 88,
+        "bbox": [
+          78,
+          780,
+          8,
+          39
+        ],
+        "is_ui_text": false,
+        "center": [
+          82,
+          799
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Schematics",
+        "confidence": 94,
+        "bbox": [
+          90,
+          798,
+          74,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          127,
+          803
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "6",
+        "confidence": 67,
+        "bbox": [
+          641,
+          801,
+          7,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          805
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Quest",
+        "confidence": 86,
+        "bbox": [
+          35,
+          888,
+          38,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          54,
+          900
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "Items",
+        "confidence": 85,
+        "bbox": [
+          77,
+          894,
+          35,
+          10
+        ],
+        "is_ui_text": true,
+        "center": [
+          94,
+          899
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "text": "1",
+        "confidence": 72,
+        "bbox": [
+          642,
+          896,
+          5,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          900
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Goated",
+        "confidence": 88,
+        "bbox": [
+          399,
+          3,
+          147,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          472,
+          10
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Brass",
+        "confidence": 93,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Ixatet",
+        "confidence": 83,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "23",
+        "confidence": 59,
+        "bbox": [
+          173,
+          22,
+          18,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          182,
+          34
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "@",
+        "confidence": 91,
+        "bbox": [
+          221,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          236,
+          31
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "@",
+        "confidence": 89,
+        "bbox": [
+          258,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          273,
+          31
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "@",
+        "confidence": 78,
+        "bbox": [
+          295,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          310,
+          31
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "@",
+        "confidence": 91,
+        "bbox": [
+          332,
+          16,
+          30,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          347,
+          31
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "USA",
+        "confidence": 95,
+        "bbox": [
+          459,
+          23,
+          19,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          468,
+          28
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "all",
+        "confidence": 83,
+        "bbox": [
+          484,
+          22,
+          11,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          27
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "[Lv.20]",
+        "confidence": 89,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Od",
+        "confidence": 84,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "12h",
+        "confidence": 90,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "09:2425JUN",
+        "confidence": 86,
+        "bbox": [
+          482,
+          41,
+          76,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          520,
+          46
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Autumn,",
+        "confidence": 88,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "1591",
+        "confidence": 96,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "CE",
+        "confidence": 96,
+        "bbox": [
+          665,
+          41,
+          13,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          671,
+          46
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "az",
+        "confidence": 57,
+        "bbox": [
+          938,
+          84,
+          44,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          960,
+          86
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Metal",
+        "confidence": 67,
+        "bbox": [
+          102,
+          80,
+          33,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          118,
+          94
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Wis",
+        "confidence": 93,
+        "bbox": [
+          141,
+          80,
+          20,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          151,
+          94
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "J",
+        "confidence": 52,
+        "bbox": [
+          980,
+          94,
+          4,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          982,
+          101
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Fp",
+        "confidence": 33,
+        "bbox": [
+          1548,
+          107,
+          7,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1551,
+          112
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "origin:",
+        "confidence": 65,
+        "bbox": [
+          1566,
+          99,
+          38,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          106
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Decpbound",
+        "confidence": 44,
+        "bbox": [
+          1613,
+          99,
+          69,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          1647,
+          106
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "J",
+        "confidence": 50,
+        "bbox": [
+          1677,
+          89,
+          9,
+          32
+        ],
+        "is_ui_text": false,
+        "center": [
+          1681,
+          105
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "a",
+        "confidence": 37,
+        "bbox": [
+          916,
+          119,
+          18,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          925,
+          130
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "\u00ae",
+        "confidence": 67,
+        "bbox": [
+          986,
+          119,
+          18,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          995,
+          130
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "\u2018ome",
+        "confidence": 42,
+        "bbox": [
+          1364,
+          101,
+          46,
+          41
+        ],
+        "is_ui_text": false,
+        "center": [
+          1387,
+          121
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "cs",
+        "confidence": 35,
+        "bbox": [
+          1601,
+          123,
+          10,
+          38
+        ],
+        "is_ui_text": false,
+        "center": [
+          1606,
+          142
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "corner",
+        "confidence": 35,
+        "bbox": [
+          1569,
+          136,
+          161,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1649,
+          144
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "|",
+        "confidence": 32,
+        "bbox": [
+          1727,
+          123,
+          8,
+          38
+        ],
+        "is_ui_text": false,
+        "center": [
+          1731,
+          142
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "**",
+        "confidence": 52,
+        "bbox": [
+          1543,
+          157,
+          28,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          1557,
+          164
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "=",
+        "confidence": 84,
+        "bbox": [
+          1481,
+          177,
+          16,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1489,
+          185
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "eee",
+        "confidence": 33,
+        "bbox": [
+          1519,
+          212,
+          132,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          218
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "1h)",
+        "confidence": 34,
+        "bbox": [
+          1532,
+          221,
+          13,
+          20
+        ],
+        "is_ui_text": false,
+        "center": [
+          1538,
+          231
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "ies",
+        "confidence": 33,
+        "bbox": [
+          1756,
+          231,
+          16,
+          4
+        ],
+        "is_ui_text": false,
+        "center": [
+          1764,
+          233
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "(85.",
+        "confidence": 42,
+        "bbox": [
+          1841,
+          226,
+          18,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1850,
+          231
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "+",
+        "confidence": 72,
+        "bbox": [
+          1128,
+          240,
+          20,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          1138,
+          251
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "222.",
+        "confidence": 62,
+        "bbox": [
+          1509,
+          231,
+          148,
+          36
+        ],
+        "is_ui_text": false,
+        "center": [
+          1583,
+          249
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "222",
+        "confidence": 71,
+        "bbox": [
+          1723,
+          226,
+          144,
+          40
+        ],
+        "is_ui_text": false,
+        "center": [
+          1795,
+          246
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "MIND",
+        "confidence": 89,
+        "bbox": [
+          1564,
+          264,
+          23,
+          27
+        ],
+        "is_ui_text": false,
+        "center": [
+          1575,
+          277
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "2)",
+        "confidence": 38,
+        "bbox": [
+          1593,
+          275,
+          14,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1600,
+          280
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "G@",
+        "confidence": 31,
+        "bbox": [
+          1575,
+          305,
+          26,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          1588,
+          317
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "@&",
+        "confidence": 63,
+        "bbox": [
+          1632,
+          305,
+          25,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          1644,
+          317
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Intelligence",
+        "confidence": 91,
+        "bbox": [
+          1504,
+          333,
+          52,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1530,
+          338
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Willpower",
+        "confidence": 90,
+        "bbox": [
+          1560,
+          334,
+          51,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          339
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Charisma",
+        "confidence": 90,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "avatabieso",
+        "confidence": 41,
+        "bbox": [
+          1531,
+          425,
+          64,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1563,
+          429
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Trai",
+        "confidence": 95,
+        "bbox": [
+          34,
+          434,
+          21,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          44,
+          448
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "7",
+        "confidence": 88,
+        "bbox": [
+          642,
+          446,
+          6,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          450
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "=",
+        "confidence": 82,
+        "bbox": [
+          1481,
+          439,
+          16,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1489,
+          447
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "ey",
+        "confidence": 40,
+        "bbox": [
+          1623,
+          466,
+          94,
+          26
+        ],
+        "is_ui_text": false,
+        "center": [
+          1670,
+          479
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "2",
+        "confidence": 47,
+        "bbox": [
+          1682,
+          482,
+          11,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1687,
+          485
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "9",
+        "confidence": 52,
+        "bbox": [
+          1010,
+          501,
+          10,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          1015,
+          508
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Ses",
+        "confidence": 37,
+        "bbox": [
+          1791,
+          501,
+          58,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1820,
+          505
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Equipment",
+        "confidence": 96,
+        "bbox": [
+          35,
+          538,
+          71,
+          15
+        ],
+        "is_ui_text": true,
+        "center": [
+          70,
+          545
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "a",
+        "confidence": 53,
+        "bbox": [
+          642,
+          541,
+          5,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          545
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "4",
+        "confidence": 91,
+        "bbox": [
+          947,
+          597,
+          3,
+          2
+        ],
+        "is_ui_text": false,
+        "center": [
+          948,
+          598
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "a",
+        "confidence": 38,
+        "bbox": [
+          1682,
+          616,
+          10,
+          1
+        ],
+        "is_ui_text": false,
+        "center": [
+          1687,
+          616
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "oa",
+        "confidence": 39,
+        "bbox": [
+          1714,
+          607,
+          14,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1721,
+          617
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "Shadow:",
+        "confidence": 87,
+        "bbox": [
+          1791,
+          612,
+          42,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1812,
+          616
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "51.1%",
+        "confidence": 89,
+        "bbox": [
+          1846,
+          613,
+          24,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1858,
+          617
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "2",
+        "confidence": 62,
+        "bbox": [
+          179,
+          804,
+          11,
+          1
+        ],
+        "is_ui_text": false,
+        "center": [
+          184,
+          804
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "1",
+        "confidence": 60,
+        "bbox": [
+          642,
+          896,
+          5,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          900
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "text": "4",
+        "confidence": 64,
+        "bbox": [
+          798,
+          881,
+          22,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          809,
+          895
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Goated",
+        "confidence": 89,
+        "bbox": [
+          399,
+          4,
+          43,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          420,
+          9
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Brass",
+        "confidence": 93,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Vulture@",
+        "confidence": 37,
+        "bbox": [
+          484,
+          3,
+          62,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          515,
+          10
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Ixatet",
+        "confidence": 81,
+        "bbox": [
+          784,
+          5,
+          34,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          801,
+          10
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Virginia,",
+        "confidence": 93,
+        "bbox": [
+          398,
+          13,
+          52,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          28
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "USA",
+        "confidence": 95,
+        "bbox": [
+          459,
+          23,
+          18,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          468,
+          28
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "all",
+        "confidence": 68,
+        "bbox": [
+          484,
+          13,
+          11,
+          30
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          28
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "pv_JUN_24_04:59h",
+        "confidence": 36,
+        "bbox": [
+          576,
+          22,
+          124,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          638,
+          29
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "2364059163:B|14",
+        "confidence": 32,
+        "bbox": [
+          722,
+          20,
+          111,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          777,
+          27
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "[Lv.20]",
+        "confidence": 92,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Od",
+        "confidence": 74,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "12h",
+        "confidence": 74,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "56m",
+        "confidence": 89,
+        "bbox": [
+          442,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          454,
+          46
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "||",
+        "confidence": 72,
+        "bbox": [
+          471,
+          40,
+          5,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          473,
+          47
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "09:2425",
+        "confidence": 87,
+        "bbox": [
+          482,
+          41,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          46
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "JUN",
+        "confidence": 83,
+        "bbox": [
+          534,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          546,
+          46
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Autumn,",
+        "confidence": 80,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "1591",
+        "confidence": 76,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "CE",
+        "confidence": 76,
+        "bbox": [
+          663,
+          41,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          670,
+          46
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": ">",
+        "confidence": 77,
+        "bbox": [
+          938,
+          84,
+          44,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          960,
+          86
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Aspect:",
+        "confidence": 71,
+        "bbox": [
+          1574,
+          70,
+          37,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1592,
+          84
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Acret",
+        "confidence": 39,
+        "bbox": [
+          1616,
+          82,
+          22,
+          6
+        ],
+        "is_ui_text": false,
+        "center": [
+          1627,
+          85
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "|",
+        "confidence": 95,
+        "bbox": [
+          1646,
+          70,
+          6,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1649,
+          84
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "fa",
+        "confidence": 38,
+        "bbox": [
+          1497,
+          91,
+          7,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1500,
+          96
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "f",
+        "confidence": 49,
+        "bbox": [
+          1678,
+          84,
+          7,
+          35
+        ],
+        "is_ui_text": false,
+        "center": [
+          1681,
+          101
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "ome",
+        "confidence": 33,
+        "bbox": [
+          916,
+          118,
+          88,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          960,
+          124
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "=",
+        "confidence": 84,
+        "bbox": [
+          1513,
+          126,
+          26,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1526,
+          129
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a",
+        "confidence": 31,
+        "bbox": [
+          917,
+          136,
+          16,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          925,
+          138
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "4",
+        "confidence": 69,
+        "bbox": [
+          1380,
+          130,
+          4,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1382,
+          133
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "POWER",
+        "confidence": 82,
+        "bbox": [
+          1507,
+          136,
+          41,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1527,
+          140
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Om",
+        "confidence": 61,
+        "bbox": [
+          1499,
+          159,
+          26,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1512,
+          165
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "ate",
+        "confidence": 69,
+        "bbox": [
+          1543,
+          157,
+          28,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          1557,
+          164
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "=",
+        "confidence": 48,
+        "bbox": [
+          1481,
+          175,
+          16,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1489,
+          178
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "2",
+        "confidence": 95,
+        "bbox": [
+          642,
+          186,
+          6,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          190
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "j=",
+        "confidence": 61,
+        "bbox": [
+          1481,
+          186,
+          16,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1489,
+          189
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "BODY",
+        "confidence": 94,
+        "bbox": [
+          1563,
+          186,
+          24,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1575,
+          200
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "(75)",
+        "confidence": 77,
+        "bbox": [
+          1591,
+          186,
+          16,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1599,
+          200
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a",
+        "confidence": 31,
+        "bbox": [
+          1724,
+          221,
+          26,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          1737,
+          223
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Ga)",
+        "confidence": 42,
+        "bbox": [
+          1532,
+          227,
+          69,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1566,
+          232
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "GB)",
+        "confidence": 42,
+        "bbox": [
+          1631,
+          227,
+          26,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1644,
+          231
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "x",
+        "confidence": 81,
+        "bbox": [
+          868,
+          237,
+          24,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          880,
+          249
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "222",
+        "confidence": 59,
+        "bbox": [
+          1509,
+          231,
+          148,
+          36
+        ],
+        "is_ui_text": false,
+        "center": [
+          1583,
+          249
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "92",
+        "confidence": 66,
+        "bbox": [
+          1723,
+          226,
+          32,
+          40
+        ],
+        "is_ui_text": false,
+        "center": [
+          1739,
+          246
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "7",
+        "confidence": 68,
+        "bbox": [
+          1649,
+          257,
+          8,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1653,
+          262
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Z",
+        "confidence": 84,
+        "bbox": [
+          950,
+          265,
+          20,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          960,
+          277
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Vv",
+        "confidence": 41,
+        "bbox": [
+          1024,
+          254,
+          28,
+          40
+        ],
+        "is_ui_text": false,
+        "center": [
+          1038,
+          274
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "vo)",
+        "confidence": 46,
+        "bbox": [
+          1564,
+          275,
+          43,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          280
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "|",
+        "confidence": 69,
+        "bbox": [
+          760,
+          299,
+          3,
+          3
+        ],
+        "is_ui_text": false,
+        "center": [
+          761,
+          300
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "|",
+        "confidence": 83,
+        "bbox": [
+          1157,
+          299,
+          3,
+          3
+        ],
+        "is_ui_text": false,
+        "center": [
+          1158,
+          300
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Mt",
+        "confidence": 36,
+        "bbox": [
+          1519,
+          290,
+          20,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          296
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "ou",
+        "confidence": 65,
+        "bbox": [
+          1631,
+          290,
+          20,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          296
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "\u2014\u2014\u2014",
+        "confidence": 31,
+        "bbox": [
+          1832,
+          295,
+          44,
+          1
+        ],
+        "is_ui_text": false,
+        "center": [
+          1854,
+          295
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "oO",
+        "confidence": 47,
+        "bbox": [
+          1525,
+          305,
+          20,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1535,
+          315
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "&",
+        "confidence": 67,
+        "bbox": [
+          1633,
+          305,
+          24,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1645,
+          315
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "tarde",
+        "confidence": 44,
+        "bbox": [
+          1229,
+          315,
+          38,
+          34
+        ],
+        "is_ui_text": false,
+        "center": [
+          1248,
+          332
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Wipower",
+        "confidence": 55,
+        "bbox": [
+          1565,
+          318,
+          46,
+          34
+        ],
+        "is_ui_text": false,
+        "center": [
+          1588,
+          335
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Charisma",
+        "confidence": 51,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "(95)",
+        "confidence": 87,
+        "bbox": [
+          1779,
+          324,
+          32,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1795,
+          338
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a4",
+        "confidence": 59,
+        "bbox": [
+          1775,
+          347,
+          42,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1796,
+          356
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "0",
+        "confidence": 69,
+        "bbox": [
+          1590,
+          409,
+          7,
+          38
+        ],
+        "is_ui_text": false,
+        "center": [
+          1593,
+          428
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "|",
+        "confidence": 63,
+        "bbox": [
+          1892,
+          437,
+          6,
+          6
+        ],
+        "is_ui_text": false,
+        "center": [
+          1895,
+          440
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Trai",
+        "confidence": 95,
+        "bbox": [
+          34,
+          435,
+          21,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          44,
+          449
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "=",
+        "confidence": 39,
+        "bbox": [
+          1481,
+          439,
+          16,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1489,
+          447
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "=a",
+        "confidence": 61,
+        "bbox": [
+          1883,
+          439,
+          16,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1891,
+          447
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "2",
+        "confidence": 61,
+        "bbox": [
+          1682,
+          482,
+          11,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1687,
+          485
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "5)",
+        "confidence": 40,
+        "bbox": [
+          1649,
+          506,
+          16,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1657,
+          514
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Equipment",
+        "confidence": 95,
+        "bbox": [
+          35,
+          538,
+          71,
+          15
+        ],
+        "is_ui_text": true,
+        "center": [
+          70,
+          545
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "1",
+        "confidence": 68,
+        "bbox": [
+          642,
+          541,
+          5,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          644,
+          545
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "Lightning:",
+        "confidence": 65,
+        "bbox": [
+          1791,
+          584,
+          42,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1812,
+          589
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "48.5%",
+        "confidence": 71,
+        "bbox": [
+          1846,
+          585,
+          31,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1861,
+          589
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "6",
+        "confidence": 66,
+        "bbox": [
+          243,
+          656,
+          64,
+          64
+        ],
+        "is_ui_text": false,
+        "center": [
+          275,
+          688
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a",
+        "confidence": 38,
+        "bbox": [
+          314,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          316,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "fa",
+        "confidence": 71,
+        "bbox": [
+          371,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          373,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a",
+        "confidence": 40,
+        "bbox": [
+          384,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          386,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "fe",
+        "confidence": 50,
+        "bbox": [
+          441,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          443,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a]",
+        "confidence": 35,
+        "bbox": [
+          454,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          456,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "fs",
+        "confidence": 72,
+        "bbox": [
+          511,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          513,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "et",
+        "confidence": 43,
+        "bbox": [
+          524,
+          714,
+          5,
+          5
+        ],
+        "is_ui_text": false,
+        "center": [
+          526,
+          716
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "rs",
+        "confidence": 61,
+        "bbox": [
+          577,
+          705,
+          9,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          581,
+          715
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "a",
+        "confidence": 81,
+        "bbox": [
+          179,
+          804,
+          11,
+          1
+        ],
+        "is_ui_text": false,
+        "center": [
+          184,
+          804
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "text": "1g",
+        "confidence": 41,
+        "bbox": [
+          642,
+          892,
+          31,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          657,
+          900
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Goated",
+        "confidence": 92,
+        "bbox": [
+          399,
+          4,
+          43,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          420,
+          9
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Brass",
+        "confidence": 89,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Vulture",
+        "confidence": 89,
+        "bbox": [
+          484,
+          0,
+          44,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          12
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "@",
+        "confidence": 89,
+        "bbox": [
+          538,
+          3,
+          8,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          542,
+          10
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "USA",
+        "confidence": 96,
+        "bbox": [
+          455,
+          23,
+          25,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          467,
+          28
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "all",
+        "confidence": 61,
+        "bbox": [
+          484,
+          22,
+          11,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          27
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Od",
+        "confidence": 75,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "12h",
+        "confidence": 75,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "56m",
+        "confidence": 90,
+        "bbox": [
+          442,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          454,
+          46
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "||",
+        "confidence": 77,
+        "bbox": [
+          471,
+          40,
+          5,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          473,
+          47
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "09:2425",
+        "confidence": 93,
+        "bbox": [
+          482,
+          41,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          46
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "JUN",
+        "confidence": 72,
+        "bbox": [
+          534,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          546,
+          46
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Autumn,",
+        "confidence": 72,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "1591",
+        "confidence": 85,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "CE",
+        "confidence": 87,
+        "bbox": [
+          663,
+          41,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          670,
+          46
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Eastern",
+        "confidence": 93,
+        "bbox": [
+          576,
+          5,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          600,
+          10
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "9h",
+        "confidence": 74,
+        "bbox": [
+          686,
+          22,
+          14,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          693,
+          27
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Daedalus",
+        "confidence": 92,
+        "bbox": [
+          722,
+          0,
+          51,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          747,
+          12
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Ixatet",
+        "confidence": 82,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "2364059163:B]14",
+        "confidence": 44,
+        "bbox": [
+          721,
+          20,
+          112,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          777,
+          27
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "[Lv.20]",
+        "confidence": 87,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "o",
+        "confidence": 80,
+        "bbox": [
+          1153,
+          734,
+          11,
+          17
+        ],
+        "is_ui_text": false,
+        "center": [
+          1158,
+          742
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "{Greate",
+        "confidence": 41,
+        "bbox": [
+          1369,
+          116,
+          41,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1389,
+          121
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "foe",
+        "confidence": 49,
+        "bbox": [
+          1566,
+          99,
+          38,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          113
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "os]",
+        "confidence": 35,
+        "bbox": [
+          1653,
+          99,
+          29,
+          26
+        ],
+        "is_ui_text": false,
+        "center": [
+          1667,
+          112
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Proficency",
+        "confidence": 66,
+        "bbox": [
+          1744,
+          152,
+          58,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1773,
+          166
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "sm",
+        "confidence": 49,
+        "bbox": [
+          1522,
+          212,
+          15,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          215
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "FID",
+        "confidence": 34,
+        "bbox": [
+          1578,
+          212,
+          16,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1586,
+          215
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "AGL",
+        "confidence": 34,
+        "bbox": [
+          1632,
+          212,
+          18,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          215
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "my)",
+        "confidence": 32,
+        "bbox": [
+          1525,
+          227,
+          20,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1535,
+          237
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "(75)",
+        "confidence": 32,
+        "bbox": [
+          1575,
+          227,
+          26,
+          21
+        ],
+        "is_ui_text": false,
+        "center": [
+          1588,
+          237
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Agilty",
+        "confidence": 33,
+        "bbox": [
+          1626,
+          256,
+          31,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          261
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "MIND",
+        "confidence": 94,
+        "bbox": [
+          1564,
+          265,
+          22,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1575,
+          279
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "(22)",
+        "confidence": 56,
+        "bbox": [
+          1592,
+          275,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1599,
+          280
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "HA",
+        "confidence": 36,
+        "bbox": [
+          1632,
+          290,
+          19,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          293
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Willpower",
+        "confidence": 78,
+        "bbox": [
+          1560,
+          334,
+          51,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          339
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Charisma",
+        "confidence": 93,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "|",
+        "confidence": 61,
+        "bbox": [
+          1478,
+          415,
+          6,
+          32
+        ],
+        "is_ui_text": false,
+        "center": [
+          1481,
+          431
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Points",
+        "confidence": 70,
+        "bbox": [
+          1482,
+          425,
+          42,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1503,
+          434
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Available:",
+        "confidence": 87,
+        "bbox": [
+          1528,
+          425,
+          67,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1561,
+          429
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "0",
+        "confidence": 96,
+        "bbox": [
+          1592,
+          415,
+          6,
+          32
+        ],
+        "is_ui_text": false,
+        "center": [
+          1595,
+          431
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "WEAPONS",
+        "confidence": 73,
+        "bbox": [
+          1770,
+          197,
+          51,
+          8
+        ],
+        "is_ui_text": true,
+        "center": [
+          1795,
+          201
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "ee",
+        "confidence": 38,
+        "bbox": [
+          1840,
+          202,
+          26,
+          34
+        ],
+        "is_ui_text": false,
+        "center": [
+          1853,
+          219
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "text": "Resistances",
+        "confidence": 45,
+        "bbox": [
+          1791,
+          501,
+          58,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1820,
+          505
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Goated",
+        "confidence": 93,
+        "bbox": [
+          399,
+          4,
+          43,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          420,
+          9
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Brass",
+        "confidence": 89,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Vulture",
+        "confidence": 89,
+        "bbox": [
+          484,
+          0,
+          44,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          12
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "@",
+        "confidence": 89,
+        "bbox": [
+          538,
+          3,
+          8,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          542,
+          10
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "USA",
+        "confidence": 96,
+        "bbox": [
+          455,
+          23,
+          25,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          467,
+          28
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "all",
+        "confidence": 55,
+        "bbox": [
+          484,
+          22,
+          11,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          27
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Eastern",
+        "confidence": 92,
+        "bbox": [
+          576,
+          5,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          600,
+          10
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Luminant",
+        "confidence": 75,
+        "bbox": [
+          628,
+          5,
+          60,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          658,
+          10
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "pv_JUN_24_04:59h",
+        "confidence": 85,
+        "bbox": [
+          576,
+          22,
+          124,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          638,
+          29
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Od",
+        "confidence": 86,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "12h",
+        "confidence": 94,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "56m",
+        "confidence": 68,
+        "bbox": [
+          442,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          454,
+          46
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "||",
+        "confidence": 68,
+        "bbox": [
+          471,
+          40,
+          5,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          473,
+          47
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "09:2425",
+        "confidence": 40,
+        "bbox": [
+          482,
+          41,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          46
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "JUN",
+        "confidence": 40,
+        "bbox": [
+          534,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          546,
+          46
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Autumn,",
+        "confidence": 80,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "1591",
+        "confidence": 92,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "CE",
+        "confidence": 92,
+        "bbox": [
+          663,
+          41,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          670,
+          46
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Daedalus",
+        "confidence": 92,
+        "bbox": [
+          718,
+          0,
+          55,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          745,
+          12
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Ixatet",
+        "confidence": 83,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "2364059163:B]14",
+        "confidence": 34,
+        "bbox": [
+          721,
+          20,
+          112,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          777,
+          27
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "[Lv.20]",
+        "confidence": 87,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "{Greate",
+        "confidence": 48,
+        "bbox": [
+          1369,
+          116,
+          41,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1389,
+          121
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Landing",
+        "confidence": 64,
+        "bbox": [
+          1233,
+          326,
+          34,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1250,
+          331
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "10",
+        "confidence": 31,
+        "bbox": [
+          1814,
+          129,
+          32,
+          32
+        ],
+        "is_ui_text": false,
+        "center": [
+          1830,
+          145
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Proficency",
+        "confidence": 68,
+        "bbox": [
+          1744,
+          152,
+          58,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1773,
+          166
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "a)",
+        "confidence": 71,
+        "bbox": [
+          1523,
+          222,
+          22,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1534,
+          236
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "(7%)",
+        "confidence": 47,
+        "bbox": [
+          1575,
+          227,
+          26,
+          24
+        ],
+        "is_ui_text": false,
+        "center": [
+          1588,
+          239
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "(Go)",
+        "confidence": 64,
+        "bbox": [
+          1631,
+          227,
+          26,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1644,
+          236
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Swengh",
+        "confidence": 68,
+        "bbox": [
+          1509,
+          255,
+          41,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          261
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Fordude",
+        "confidence": 53,
+        "bbox": [
+          1564,
+          247,
+          43,
+          17
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          255
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "MIND",
+        "confidence": 94,
+        "bbox": [
+          1564,
+          265,
+          22,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1575,
+          279
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "(22)",
+        "confidence": 54,
+        "bbox": [
+          1592,
+          275,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1599,
+          280
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Int",
+        "confidence": 42,
+        "bbox": [
+          1522,
+          290,
+          15,
+          7
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          293
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Intaligence",
+        "confidence": 37,
+        "bbox": [
+          1504,
+          325,
+          52,
+          19
+        ],
+        "is_ui_text": false,
+        "center": [
+          1530,
+          334
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Wilpower",
+        "confidence": 86,
+        "bbox": [
+          1560,
+          323,
+          51,
+          22
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          334
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Charisma",
+        "confidence": 94,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Points",
+        "confidence": 93,
+        "bbox": [
+          1490,
+          425,
+          34,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1507,
+          429
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Available:",
+        "confidence": 96,
+        "bbox": [
+          1528,
+          425,
+          67,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1561,
+          429
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "0",
+        "confidence": 96,
+        "bbox": [
+          1591,
+          415,
+          7,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1594,
+          429
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "WEAPONS",
+        "confidence": 76,
+        "bbox": [
+          1770,
+          197,
+          51,
+          8
+        ],
+        "is_ui_text": true,
+        "center": [
+          1795,
+          201
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "Resistances",
+        "confidence": 50,
+        "bbox": [
+          1791,
+          501,
+          58,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1820,
+          505
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "text": "\u00a5",
+        "confidence": 36,
+        "bbox": [
+          1910,
+          155,
+          10,
+          17
+        ],
+        "is_ui_text": false,
+        "center": [
+          1915,
+          163
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Goated",
+        "confidence": 92,
+        "bbox": [
+          399,
+          4,
+          43,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          420,
+          9
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Brass",
+        "confidence": 90,
+        "bbox": [
+          447,
+          0,
+          32,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          463,
+          12
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Vulture",
+        "confidence": 89,
+        "bbox": [
+          484,
+          0,
+          44,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          12
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "@",
+        "confidence": 89,
+        "bbox": [
+          538,
+          3,
+          8,
+          14
+        ],
+        "is_ui_text": false,
+        "center": [
+          542,
+          10
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Virginia,",
+        "confidence": 96,
+        "bbox": [
+          398,
+          23,
+          52,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          424,
+          29
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "USA",
+        "confidence": 95,
+        "bbox": [
+          455,
+          23,
+          25,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          467,
+          28
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "all",
+        "confidence": 53,
+        "bbox": [
+          484,
+          22,
+          11,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          489,
+          27
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "pv_JUN_24_04:!",
+        "confidence": 33,
+        "bbox": [
+          576,
+          23,
+          100,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          626,
+          29
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Od",
+        "confidence": 65,
+        "bbox": [
+          399,
+          40,
+          13,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          405,
+          45
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "12h",
+        "confidence": 65,
+        "bbox": [
+          417,
+          40,
+          20,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          427,
+          45
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "56m",
+        "confidence": 90,
+        "bbox": [
+          442,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          454,
+          46
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "||",
+        "confidence": 88,
+        "bbox": [
+          471,
+          40,
+          5,
+          15
+        ],
+        "is_ui_text": false,
+        "center": [
+          473,
+          47
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "09:2425",
+        "confidence": 93,
+        "bbox": [
+          482,
+          41,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          506,
+          46
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "JUN",
+        "confidence": 82,
+        "bbox": [
+          534,
+          41,
+          24,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          546,
+          46
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Autumn,",
+        "confidence": 75,
+        "bbox": [
+          575,
+          41,
+          52,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          601,
+          47
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "1591",
+        "confidence": 87,
+        "bbox": [
+          632,
+          41,
+          27,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          645,
+          46
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "CE",
+        "confidence": 89,
+        "bbox": [
+          663,
+          41,
+          15,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          670,
+          46
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Eastern",
+        "confidence": 93,
+        "bbox": [
+          576,
+          5,
+          48,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          600,
+          10
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Luminant",
+        "confidence": 47,
+        "bbox": [
+          628,
+          5,
+          60,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          658,
+          10
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "9h",
+        "confidence": 80,
+        "bbox": [
+          686,
+          22,
+          14,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          693,
+          27
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Daedalus",
+        "confidence": 92,
+        "bbox": [
+          718,
+          0,
+          55,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          745,
+          12
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Ixatet",
+        "confidence": 84,
+        "bbox": [
+          782,
+          0,
+          36,
+          25
+        ],
+        "is_ui_text": false,
+        "center": [
+          800,
+          12
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "[Lv.20]",
+        "confidence": 87,
+        "bbox": [
+          838,
+          20,
+          42,
+          13
+        ],
+        "is_ui_text": false,
+        "center": [
+          859,
+          26
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "{Greate",
+        "confidence": 43,
+        "bbox": [
+          1369,
+          116,
+          41,
+          10
+        ],
+        "is_ui_text": false,
+        "center": [
+          1389,
+          121
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "foe",
+        "confidence": 40,
+        "bbox": [
+          1566,
+          99,
+          38,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          113
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Profidency",
+        "confidence": 52,
+        "bbox": [
+          1744,
+          152,
+          58,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1773,
+          166
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "a)",
+        "confidence": 74,
+        "bbox": [
+          1523,
+          222,
+          22,
+          29
+        ],
+        "is_ui_text": false,
+        "center": [
+          1534,
+          236
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "(Go)",
+        "confidence": 83,
+        "bbox": [
+          1631,
+          227,
+          26,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1644,
+          236
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Swengh",
+        "confidence": 71,
+        "bbox": [
+          1509,
+          247,
+          41,
+          20
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          257
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Fordude",
+        "confidence": 42,
+        "bbox": [
+          1564,
+          247,
+          43,
+          17
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          255
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "MIND",
+        "confidence": 92,
+        "bbox": [
+          1564,
+          275,
+          24,
+          8
+        ],
+        "is_ui_text": false,
+        "center": [
+          1576,
+          279
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "2s",
+        "confidence": 50,
+        "bbox": [
+          1595,
+          276,
+          12,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1601,
+          280
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "INE",
+        "confidence": 32,
+        "bbox": [
+          1519,
+          290,
+          20,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1529,
+          296
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "MLL",
+        "confidence": 32,
+        "bbox": [
+          1575,
+          290,
+          76,
+          12
+        ],
+        "is_ui_text": false,
+        "center": [
+          1613,
+          296
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "0)",
+        "confidence": 45,
+        "bbox": [
+          1525,
+          305,
+          20,
+          16
+        ],
+        "is_ui_text": false,
+        "center": [
+          1535,
+          313
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "3))",
+        "confidence": 77,
+        "bbox": [
+          1633,
+          305,
+          24,
+          18
+        ],
+        "is_ui_text": false,
+        "center": [
+          1645,
+          314
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Intelligence",
+        "confidence": 49,
+        "bbox": [
+          1504,
+          333,
+          52,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1530,
+          338
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Willpower",
+        "confidence": 78,
+        "bbox": [
+          1560,
+          334,
+          51,
+          11
+        ],
+        "is_ui_text": false,
+        "center": [
+          1585,
+          339
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Charisma",
+        "confidence": 94,
+        "bbox": [
+          1618,
+          333,
+          47,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1641,
+          337
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Points",
+        "confidence": 96,
+        "bbox": [
+          1490,
+          425,
+          34,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1507,
+          429
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "Available:",
+        "confidence": 96,
+        "bbox": [
+          1528,
+          425,
+          67,
+          9
+        ],
+        "is_ui_text": false,
+        "center": [
+          1561,
+          429
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "0",
+        "confidence": 96,
+        "bbox": [
+          1591,
+          415,
+          7,
+          28
+        ],
+        "is_ui_text": false,
+        "center": [
+          1594,
+          429
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "WEAPONS",
+        "confidence": 72,
+        "bbox": [
+          1770,
+          197,
+          51,
+          8
+        ],
+        "is_ui_text": true,
+        "center": [
+          1795,
+          201
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "text": "ee",
+        "confidence": 44,
+        "bbox": [
+          1840,
+          202,
+          26,
+          34
+        ],
+        "is_ui_text": false,
+        "center": [
+          1853,
+          219
+        ]
+      }
+    ],
+    "ui_signatures": [
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 637.5,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          827,
+          1020,
+          49,
+          41
+        ],
+        "area": 1109.5,
+        "aspect_ratio": 1.1951219512195121,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          32
+        ],
+        "area": 742.5,
+        "aspect_ratio": 1.625,
+        "center": [
+          780,
+          1036
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 919.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 986.0,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 899.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          36,
+          920,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          64,
+          948
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          1027,
+          730,
+          116,
+          107
+        ],
+        "area": 2116.0,
+        "aspect_ratio": 1.0841121495327102,
+        "center": [
+          1085,
+          783
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          996,
+          305,
+          42,
+          37
+        ],
+        "area": 1065.5,
+        "aspect_ratio": 1.135135135135135,
+        "center": [
+          1017,
+          323
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          526,
+          305,
+          59,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0535714285714286,
+        "center": [
+          555,
+          333
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          247,
+          305,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          275,
+          333
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          104,
+          305,
+          59,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0535714285714286,
+        "center": [
+          133,
+          333
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          36,
+          305,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          64,
+          333
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          117,
+          218,
+          39,
+          30
+        ],
+        "area": 569.5,
+        "aspect_ratio": 1.3,
+        "center": [
+          136,
+          233
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          260,
+          128,
+          60,
+          20
+        ],
+        "area": 704.5,
+        "aspect_ratio": 3.0,
+        "center": [
+          290,
+          138
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          260,
+          97,
+          58,
+          23
+        ],
+        "area": 1093.0,
+        "aspect_ratio": 2.5217391304347827,
+        "center": [
+          289,
+          108
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          929,
+          76,
+          60,
+          53
+        ],
+        "area": 2024.5,
+        "aspect_ratio": 1.1320754716981132,
+        "center": [
+          959,
+          102
+        ]
+      },
+      {
+        "timestamp": 1.0,
+        "type": "ui_button",
+        "bbox": [
+          1496,
+          75,
+          60,
+          59
+        ],
+        "area": 2518.5,
+        "aspect_ratio": 1.0169491525423728,
+        "center": [
+          1526,
+          104
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 638.0,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 793.0,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          827,
+          1019,
+          49,
+          42
+        ],
+        "area": 1109.5,
+        "aspect_ratio": 1.1666666666666667,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 918.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 985.5,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 895.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          36,
+          920,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          64,
+          948
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          37,
+          210,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          65,
+          238
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1052.0,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          1723,
+          140,
+          146,
+          134
+        ],
+        "area": 3540.0,
+        "aspect_ratio": 1.0895522388059702,
+        "center": [
+          1796,
+          207
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          260,
+          128,
+          58,
+          20
+        ],
+        "area": 703.0,
+        "aspect_ratio": 2.9,
+        "center": [
+          289,
+          138
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          260,
+          97,
+          60,
+          23
+        ],
+        "area": 1093.0,
+        "aspect_ratio": 2.608695652173913,
+        "center": [
+          290,
+          108
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          1371,
+          90,
+          39,
+          37
+        ],
+        "area": 1045.0,
+        "aspect_ratio": 1.054054054054054,
+        "center": [
+          1390,
+          108
+        ]
+      },
+      {
+        "timestamp": 2.0,
+        "type": "ui_button",
+        "bbox": [
+          930,
+          76,
+          59,
+          54
+        ],
+        "area": 1984.5,
+        "aspect_ratio": 1.0925925925925926,
+        "center": [
+          959,
+          103
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 639.5,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 789.0,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          827,
+          1019,
+          49,
+          42
+        ],
+        "area": 1107.0,
+        "aspect_ratio": 1.1666666666666667,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 919.5,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 985.5,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 895.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          872,
+          579,
+          33,
+          32
+        ],
+        "area": 632.0,
+        "aspect_ratio": 1.03125,
+        "center": [
+          888,
+          595
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          966,
+          473,
+          54,
+          43
+        ],
+        "area": 572.0,
+        "aspect_ratio": 1.255813953488372,
+        "center": [
+          993,
+          494
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          1607,
+          460,
+          178,
+          157
+        ],
+        "area": 4792.5,
+        "aspect_ratio": 1.1337579617834395,
+        "center": [
+          1696,
+          538
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          247,
+          305,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          275,
+          333
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1046.5,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          260,
+          128,
+          58,
+          20
+        ],
+        "area": 700.5,
+        "aspect_ratio": 2.9,
+        "center": [
+          289,
+          138
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          99,
+          56,
+          21
+        ],
+        "area": 1092.0,
+        "aspect_ratio": 2.6666666666666665,
+        "center": [
+          290,
+          109
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          1369,
+          90,
+          41,
+          37
+        ],
+        "area": 1052.0,
+        "aspect_ratio": 1.1081081081081081,
+        "center": [
+          1389,
+          108
+        ]
+      },
+      {
+        "timestamp": 3.0,
+        "type": "ui_button",
+        "bbox": [
+          929,
+          76,
+          60,
+          54
+        ],
+        "area": 1951.5,
+        "aspect_ratio": 1.1111111111111112,
+        "center": [
+          959,
+          103
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 640.0,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 941.5,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          827,
+          1019,
+          49,
+          42
+        ],
+        "area": 1109.0,
+        "aspect_ratio": 1.1666666666666667,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 916.5,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          1045,
+          1003,
+          47,
+          44
+        ],
+        "area": 985.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 895.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          891,
+          668,
+          110,
+          32
+        ],
+        "area": 601.5,
+        "aspect_ratio": 3.4375,
+        "center": [
+          946,
+          684
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          895,
+          658,
+          105,
+          31
+        ],
+        "area": 596.0,
+        "aspect_ratio": 3.3870967741935485,
+        "center": [
+          947,
+          673
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          966,
+          473,
+          54,
+          43
+        ],
+        "area": 559.5,
+        "aspect_ratio": 1.255813953488372,
+        "center": [
+          993,
+          494
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          113,
+          218,
+          43,
+          42
+        ],
+        "area": 770.0,
+        "aspect_ratio": 1.0238095238095237,
+        "center": [
+          134,
+          239
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          37,
+          210,
+          57,
+          56
+        ],
+        "area": 2985.0,
+        "aspect_ratio": 1.0178571428571428,
+        "center": [
+          65,
+          238
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1051.0,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          130,
+          56,
+          16
+        ],
+        "area": 703.0,
+        "aspect_ratio": 3.5,
+        "center": [
+          290,
+          138
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          99,
+          58,
+          21
+        ],
+        "area": 1092.0,
+        "aspect_ratio": 2.761904761904762,
+        "center": [
+          291,
+          109
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          1369,
+          90,
+          41,
+          37
+        ],
+        "area": 1051.0,
+        "aspect_ratio": 1.1081081081081081,
+        "center": [
+          1389,
+          108
+        ]
+      },
+      {
+        "timestamp": 4.0,
+        "type": "ui_button",
+        "bbox": [
+          931,
+          76,
+          60,
+          54
+        ],
+        "area": 1977.0,
+        "aspect_ratio": 1.1111111111111112,
+        "center": [
+          961,
+          103
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 640.5,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          826,
+          1020,
+          50,
+          41
+        ],
+        "area": 1104.0,
+        "aspect_ratio": 1.2195121951219512,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 793.5,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 916.5,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 983.0,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 892.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          983,
+          744,
+          52,
+          46
+        ],
+        "area": 952.5,
+        "aspect_ratio": 1.1304347826086956,
+        "center": [
+          1009,
+          767
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          1120,
+          732,
+          53,
+          26
+        ],
+        "area": 526.5,
+        "aspect_ratio": 2.0384615384615383,
+        "center": [
+          1146,
+          745
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          968,
+          476,
+          51,
+          45
+        ],
+        "area": 602.0,
+        "aspect_ratio": 1.1333333333333333,
+        "center": [
+          993,
+          498
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          113,
+          218,
+          43,
+          42
+        ],
+        "area": 773.0,
+        "aspect_ratio": 1.0238095238095237,
+        "center": [
+          134,
+          239
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1051.0,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          130,
+          56,
+          16
+        ],
+        "area": 701.5,
+        "aspect_ratio": 3.5,
+        "center": [
+          290,
+          138
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          99,
+          56,
+          21
+        ],
+        "area": 1092.0,
+        "aspect_ratio": 2.6666666666666665,
+        "center": [
+          290,
+          109
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          1369,
+          90,
+          41,
+          37
+        ],
+        "area": 1054.0,
+        "aspect_ratio": 1.1081081081081081,
+        "center": [
+          1389,
+          108
+        ]
+      },
+      {
+        "timestamp": 5.0,
+        "type": "ui_button",
+        "bbox": [
+          931,
+          76,
+          57,
+          54
+        ],
+        "area": 2002.5,
+        "aspect_ratio": 1.0555555555555556,
+        "center": [
+          959,
+          103
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 639.0,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 793.5,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          827,
+          1019,
+          49,
+          42
+        ],
+        "area": 1104.0,
+        "aspect_ratio": 1.1666666666666667,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 917.5,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 983.5,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 892.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          1198,
+          732,
+          47,
+          33
+        ],
+        "area": 689.0,
+        "aspect_ratio": 1.4242424242424243,
+        "center": [
+          1221,
+          748
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          968,
+          476,
+          51,
+          45
+        ],
+        "area": 596.5,
+        "aspect_ratio": 1.1333333333333333,
+        "center": [
+          993,
+          498
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          113,
+          218,
+          43,
+          42
+        ],
+        "area": 628.5,
+        "aspect_ratio": 1.0238095238095237,
+        "center": [
+          134,
+          239
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1051.0,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          130,
+          56,
+          16
+        ],
+        "area": 701.5,
+        "aspect_ratio": 3.5,
+        "center": [
+          290,
+          138
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          99,
+          56,
+          21
+        ],
+        "area": 1092.0,
+        "aspect_ratio": 2.6666666666666665,
+        "center": [
+          290,
+          109
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          1369,
+          90,
+          41,
+          37
+        ],
+        "area": 1054.0,
+        "aspect_ratio": 1.1081081081081081,
+        "center": [
+          1389,
+          108
+        ]
+      },
+      {
+        "timestamp": 6.0,
+        "type": "ui_button",
+        "bbox": [
+          931,
+          76,
+          57,
+          54
+        ],
+        "area": 2008.5,
+        "aspect_ratio": 1.0555555555555556,
+        "center": [
+          959,
+          103
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          896,
+          1020,
+          56,
+          36
+        ],
+        "area": 640.5,
+        "aspect_ratio": 1.5555555555555556,
+        "center": [
+          924,
+          1038
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          754,
+          1020,
+          52,
+          42
+        ],
+        "area": 793.5,
+        "aspect_ratio": 1.2380952380952381,
+        "center": [
+          780,
+          1041
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          826,
+          1019,
+          50,
+          42
+        ],
+        "area": 1105.0,
+        "aspect_ratio": 1.1904761904761905,
+        "center": [
+          851,
+          1040
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          1188,
+          1003,
+          47,
+          44
+        ],
+        "area": 918.5,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          1211,
+          1025
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          1044,
+          1003,
+          48,
+          44
+        ],
+        "area": 983.0,
+        "aspect_ratio": 1.0909090909090908,
+        "center": [
+          1068,
+          1025
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          684,
+          1003,
+          47,
+          44
+        ],
+        "area": 892.0,
+        "aspect_ratio": 1.0681818181818181,
+        "center": [
+          707,
+          1025
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          1243,
+          751,
+          35,
+          30
+        ],
+        "area": 527.5,
+        "aspect_ratio": 1.1666666666666667,
+        "center": [
+          1260,
+          766
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          968,
+          475,
+          51,
+          46
+        ],
+        "area": 628.5,
+        "aspect_ratio": 1.108695652173913,
+        "center": [
+          993,
+          498
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          113,
+          218,
+          43,
+          42
+        ],
+        "area": 774.0,
+        "aspect_ratio": 1.0238095238095237,
+        "center": [
+          134,
+          239
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          1061,
+          141,
+          42,
+          41
+        ],
+        "area": 1051.0,
+        "aspect_ratio": 1.024390243902439,
+        "center": [
+          1082,
+          161
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          130,
+          56,
+          16
+        ],
+        "area": 701.5,
+        "aspect_ratio": 3.5,
+        "center": [
+          290,
+          138
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          262,
+          99,
+          56,
+          21
+        ],
+        "area": 1092.0,
+        "aspect_ratio": 2.6666666666666665,
+        "center": [
+          290,
+          109
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          1369,
+          90,
+          41,
+          37
+        ],
+        "area": 1054.0,
+        "aspect_ratio": 1.1081081081081081,
+        "center": [
+          1389,
+          108
+        ]
+      },
+      {
+        "timestamp": 7.0,
+        "type": "ui_button",
+        "bbox": [
+          931,
+          76,
+          57,
+          54
+        ],
+        "area": 2010.5,
+        "aspect_ratio": 1.0555555555555556,
+        "center": [
+          959,
+          103
+        ]
+      }
+    ],
+    "exclusion_zones": [
+      {
+        "center": [
+          1247.5,
+          1032.5
+        ],
+        "radius": 87.26258176777341,
+        "element_count": 14,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 14 elements"
+      },
+      {
+        "center": [
+          935.875,
+          1039.4166666666667
+        ],
+        "radius": 134.87700455822988,
+        "element_count": 24,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 24 elements"
+      },
+      {
+        "center": [
+          1101.2307692307693,
+          1031.923076923077
+        ],
+        "radius": 89.60164063303941,
+        "element_count": 13,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 13 elements"
+      },
+      {
+        "center": [
+          811.52,
+          1039.52
+        ],
+        "radius": 90.50852749730606,
+        "element_count": 25,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 25 elements"
+      },
+      {
+        "center": [
+          683.6666666666666,
+          1034.3333333333333
+        ],
+        "radius": 98.00231475900114,
+        "element_count": 21,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 21 elements"
+      },
+      {
+        "center": [
+          1706.0,
+          535.875
+        ],
+        "radius": 97.04801403885185,
+        "element_count": 8,
+        "confidence": 0.8,
+        "description": "Persistent UI area with 8 elements"
+      },
+      {
+        "center": [
+          180.0,
+          123.0
+        ],
+        "radius": 50.0,
+        "element_count": 6,
+        "confidence": 0.6,
+        "description": "Persistent UI area with 6 elements"
+      },
+      {
+        "center": [
+          959.6428571428571,
+          102.42857142857143
+        ],
+        "radius": 53.687402714040104,
+        "element_count": 14,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 14 elements"
+      },
+      {
+        "center": [
+          971.4,
+          272.6
+        ],
+        "radius": 117.96705084083021,
+        "element_count": 5,
+        "confidence": 0.5,
+        "description": "Persistent UI area with 5 elements"
+      },
+      {
+        "center": [
+          986.75,
+          655.5
+        ],
+        "radius": 146.15254806816094,
+        "element_count": 4,
+        "confidence": 0.4,
+        "description": "Persistent UI area with 4 elements"
+      },
+      {
+        "center": [
+          79.0,
+          923.25
+        ],
+        "radius": 79.36941436256433,
+        "element_count": 4,
+        "confidence": 0.4,
+        "description": "Persistent UI area with 4 elements"
+      },
+      {
+        "center": [
+          1795.1666666666667,
+          202.16666666666666
+        ],
+        "radius": 54.904646323187386,
+        "element_count": 6,
+        "confidence": 0.6,
+        "description": "Persistent UI area with 6 elements"
+      },
+      {
+        "center": [
+          114.57142857142857,
+          237.85714285714286
+        ],
+        "radius": 99.57163441702835,
+        "element_count": 7,
+        "confidence": 0.7,
+        "description": "Persistent UI area with 7 elements"
+      },
+      {
+        "center": [
+          289.85714285714283,
+          123.35714285714286
+        ],
+        "radius": 65.3810445227964,
+        "element_count": 14,
+        "confidence": 1.0,
+        "description": "Persistent UI area with 14 elements"
+      },
+      {
+        "center": [
+          1082.0,
+          161.0
+        ],
+        "radius": 50.0,
+        "element_count": 6,
+        "confidence": 0.6,
+        "description": "Persistent UI area with 6 elements"
+      },
+      {
+        "center": [
+          1389.1666666666667,
+          108.0
+        ],
+        "radius": 50.83333333333326,
+        "element_count": 6,
+        "confidence": 0.6,
+        "description": "Persistent UI area with 6 elements"
+      },
+      {
+        "center": [
+          993.0,
+          496.4
+        ],
+        "radius": 52.39999999999998,
+        "element_count": 5,
+        "confidence": 0.5,
+        "description": "Persistent UI area with 5 elements"
+      },
+      {
+        "center": [
+          1209.0,
+          753.0
+        ],
+        "radius": 113.50590523722971,
+        "element_count": 3,
+        "confidence": 0.3,
+        "description": "Persistent UI area with 3 elements"
+      }
+    ]
+  },
+  "exclusion_config": {
+    "dialog_exclusion_system": {
+      "method": "negative_example_filtering",
+      "exclusion_zones": [
+        {
+          "center": [
+            1247.5,
+            1032.5
+          ],
+          "radius": 87.26258176777341,
+          "element_count": 14,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 14 elements"
+        },
+        {
+          "center": [
+            935.875,
+            1039.4166666666667
+          ],
+          "radius": 134.87700455822988,
+          "element_count": 24,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 24 elements"
+        },
+        {
+          "center": [
+            1101.2307692307693,
+            1031.923076923077
+          ],
+          "radius": 89.60164063303941,
+          "element_count": 13,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 13 elements"
+        },
+        {
+          "center": [
+            811.52,
+            1039.52
+          ],
+          "radius": 90.50852749730606,
+          "element_count": 25,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 25 elements"
+        },
+        {
+          "center": [
+            683.6666666666666,
+            1034.3333333333333
+          ],
+          "radius": 98.00231475900114,
+          "element_count": 21,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 21 elements"
+        },
+        {
+          "center": [
+            1706.0,
+            535.875
+          ],
+          "radius": 97.04801403885185,
+          "element_count": 8,
+          "confidence": 0.8,
+          "description": "Persistent UI area with 8 elements"
+        },
+        {
+          "center": [
+            180.0,
+            123.0
+          ],
+          "radius": 50.0,
+          "element_count": 6,
+          "confidence": 0.6,
+          "description": "Persistent UI area with 6 elements"
+        },
+        {
+          "center": [
+            959.6428571428571,
+            102.42857142857143
+          ],
+          "radius": 53.687402714040104,
+          "element_count": 14,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 14 elements"
+        },
+        {
+          "center": [
+            971.4,
+            272.6
+          ],
+          "radius": 117.96705084083021,
+          "element_count": 5,
+          "confidence": 0.5,
+          "description": "Persistent UI area with 5 elements"
+        },
+        {
+          "center": [
+            986.75,
+            655.5
+          ],
+          "radius": 146.15254806816094,
+          "element_count": 4,
+          "confidence": 0.4,
+          "description": "Persistent UI area with 4 elements"
+        },
+        {
+          "center": [
+            79.0,
+            923.25
+          ],
+          "radius": 79.36941436256433,
+          "element_count": 4,
+          "confidence": 0.4,
+          "description": "Persistent UI area with 4 elements"
+        },
+        {
+          "center": [
+            1795.1666666666667,
+            202.16666666666666
+          ],
+          "radius": 54.904646323187386,
+          "element_count": 6,
+          "confidence": 0.6,
+          "description": "Persistent UI area with 6 elements"
+        },
+        {
+          "center": [
+            114.57142857142857,
+            237.85714285714286
+          ],
+          "radius": 99.57163441702835,
+          "element_count": 7,
+          "confidence": 0.7,
+          "description": "Persistent UI area with 7 elements"
+        },
+        {
+          "center": [
+            289.85714285714283,
+            123.35714285714286
+          ],
+          "radius": 65.3810445227964,
+          "element_count": 14,
+          "confidence": 1.0,
+          "description": "Persistent UI area with 14 elements"
+        },
+        {
+          "center": [
+            1082.0,
+            161.0
+          ],
+          "radius": 50.0,
+          "element_count": 6,
+          "confidence": 0.6,
+          "description": "Persistent UI area with 6 elements"
+        },
+        {
+          "center": [
+            1389.1666666666667,
+            108.0
+          ],
+          "radius": 50.83333333333326,
+          "element_count": 6,
+          "confidence": 0.6,
+          "description": "Persistent UI area with 6 elements"
+        },
+        {
+          "center": [
+            993.0,
+            496.4
+          ],
+          "radius": 52.39999999999998,
+          "element_count": 5,
+          "confidence": 0.5,
+          "description": "Persistent UI area with 5 elements"
+        },
+        {
+          "center": [
+            1209.0,
+            753.0
+          ],
+          "radius": 113.50590523722971,
+          "element_count": 3,
+          "confidence": 0.3,
+          "description": "Persistent UI area with 3 elements"
+        }
+      ],
+      "ui_text_patterns": [
+        {
+          "text": "items",
+          "confidence_threshold": 88.5,
+          "typical_position": [
+            94.0,
+            898.5
+          ],
+          "occurrence_count": 2,
+          "exclusion_radius": 100
+        },
+        {
+          "text": "weapons",
+          "confidence_threshold": 75.2,
+          "typical_position": [
+            1795.0,
+            201.2
+          ],
+          "occurrence_count": 5,
+          "exclusion_radius": 100
+        },
+        {
+          "text": "equipment",
+          "confidence_threshold": 95.5,
+          "typical_position": [
+            70.0,
+            545.0
+          ],
+          "occurrence_count": 2,
+          "exclusion_radius": 100
+        }
+      ],
+      "ui_visual_patterns": [
+        {
+          "type": "ui_button",
+          "typical_area": 1212.0330188679245,
+          "typical_center": [
+            812.4622641509434,
+            585.4245283018868
+          ],
+          "occurrence_count": 106,
+          "exclusion_radius": 150
+        }
+      ],
+      "filtering_rules": {
+        "min_dialog_area": 15000,
+        "dialog_aspect_ratio_range": [
+          1.5,
+          4.0
+        ],
+        "exclude_top_left_quadrant": true,
+        "exclude_small_rectangles": true,
+        "require_dialog_keywords": true
+      }
+    }
+  },
+  "summary": {
+    "ui_regions_found": 82,
+    "ui_texts_found": 9,
+    "ui_signatures_found": 106,
+    "exclusion_zones_created": 18
+  }
+}

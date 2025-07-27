@@ -1,0 +1,14 @@
+# Wisp Summoning Automation Requirements
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# OCR (Optical Character Recognition)
+pytesseract>=0.3.10
+
+# Input Automation
+pyautogui>=0.9.54
+
+# Additional utilities
+typing-extensions>=4.0.0
