@@ -1,14 +1,10 @@
-# Wisp Summoning Automation Requirements
-# Computer Vision and Image Processing
-opencv-python>=4.8.0
-pillow>=10.0.0
-numpy>=1.24.0
+# AI-Powered Wisp Automation - Essential Dependencies
+# Install with: pip install -r requirements.txt
 
-# OCR (Optical Character Recognition)
-pytesseract>=0.3.10
-
-# Input Automation
-pyautogui>=0.9.54
-
-# Additional utilities
-typing-extensions>=4.0.0
+torch>=1.9.0
+transformers>=4.20.0
+opencv-python>=4.5.0
+pillow>=8.0.0
+numpy>=1.20.0
+pyautogui>=0.9.50
+easyocr>=1.6.0
