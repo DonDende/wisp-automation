@@ -15,14 +15,13 @@ def apply_quick_fix():
     print("🔧 Applying Quick Fix for Wisp Detection")
     print("="*45)
     
-    # Based on your screenshot, the dialog box is clearly in the center-upper area
-    # The coordinates I can see are approximately:
-    # - Left edge: around x=580
-    # - Top edge: around y=150  
-    # - Width: around 290 pixels
-    # - Height: around 100 pixels
+    # Based on user-provided coordinates:
+    # - Top left corner: x=747, y=180
+    # - Bottom right corner: x=1164, y=325
+    # - Width: 1164 - 747 = 417
+    # - Height: 325 - 180 = 145
     
-    optimal_region = [580, 150, 290, 100]
+    optimal_region = [747, 180, 417, 145]
     
     print(f"🎯 Setting optimal detection region: {optimal_region}")
     print("   This focuses on the center-upper area where the dialog appears")

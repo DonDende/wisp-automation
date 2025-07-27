@@ -6,8 +6,8 @@ Based on your screenshot, I've identified and fixed the issue where the system w
 
 ### ✅ What Was Fixed
 
-1. **Precise Detection Region**: Updated to `[580, 150, 290, 100]` based on your screenshot analysis
-2. **Focused Area**: Now only analyzes the center-upper area where the dialog box appears
+1. **Precise Detection Region**: Updated to `[747, 180, 417, 145]` based on user-provided coordinates
+2. **Focused Area**: Now only analyzes the exact area where the dialog box appears
 3. **Improved Configuration**: Lowered confidence threshold and enabled debug mode
 
 ### 🛠 Available Tools
@@ -55,11 +55,13 @@ Now includes 6 options:
 
 ### 📊 Detection Region Details
 
-Based on your screenshot analysis:
-- **X Position**: 580 (left edge of dialog box)
-- **Y Position**: 150 (top edge of dialog box)
-- **Width**: 290 pixels (dialog box width)
-- **Height**: 100 pixels (dialog box height)
+Based on user-provided coordinates:
+- **Top Left Corner**: (747, 180)
+- **Bottom Right Corner**: (1164, 325)
+- **X Position**: 747 (left edge of dialog box)
+- **Y Position**: 180 (top edge of dialog box)
+- **Width**: 417 pixels (dialog box width)
+- **Height**: 145 pixels (dialog box height)
 
 This region specifically targets the translucent box with X, Z, V letters and excludes:
 - Left side UI panels

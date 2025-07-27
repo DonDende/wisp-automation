@@ -24,12 +24,12 @@ def capture_and_show_regions():
     # Convert to OpenCV format
     img_cv = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
     
-    # Define potential regions based on the screenshot analysis
+    # Define potential regions based on user feedback and analysis
     regions = {
-        "center_upper": [580, 150, 290, 100],  # Based on screenshot analysis
-        "center_wide": [500, 120, 450, 160],   # Wider area
-        "center_narrow": [620, 170, 210, 60],  # Narrower focus
-        "upper_third": [400, 100, 640, 200],   # Upper third of screen
+        "user_provided": [747, 180, 417, 145],  # User-provided correct coordinates
+        "center_wide": [700, 150, 500, 200],    # Wider area around correct region
+        "center_narrow": [770, 200, 370, 100], # Narrower focus within correct region
+        "upper_third": [600, 100, 640, 250],   # Upper third of screen
     }
     
     # Create visualization
