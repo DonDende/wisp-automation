@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 import time
 import warnings
+import re
 
 # Suppress warnings for cleaner output
 warnings.filterwarnings("ignore")
@@ -255,10 +256,10 @@ class GPUOptimizedWispDetector:
                     score = pred['score']
                     
                     # Look for letter patterns in the classification
-                    if any(letter in label for letter in ['X', 'Z', 'V']):
+                    if any(letter in label for letter in ['X', 'Z', 'V', 'C']):
                         result['confidence'] = max(result['confidence'], score)
                         if score > 0.3:  # Lower threshold for detection
-                            for letter in ['X', 'Z', 'V']:
+                            for letter in ['X', 'Z', 'V', 'C']:
                                 if letter in label and letter not in result['letters']:
                                     result['letters'].append(letter)
             else:
@@ -278,14 +279,20 @@ class GPUOptimizedWispDetector:
                     # Simple heuristic: if confidence is reasonable, assume detection
                     if confidence > 0.1:
                         result['confidence'] = confidence
-                        # For demo purposes, randomly assign letters based on confidence
-                        if confidence > 0.3:
-                            result['letters'] = ['X']  # Placeholder
+                        # Use OCR to detect actual letters in the region
+                        result['letters'] = self._detect_letters_with_ocr(region)
             
-            # Supplement with template matching for better accuracy
-            template_result = self._fast_template_matching(region)
-            if template_result and template_result['confidence'] > result['confidence']:
-                result = template_result
+            # Supplement with improved template matching for better accuracy
+            gray_region = cv2.cvtColor(region, cv2.COLOR_BGR2GRAY) if len(region.shape) == 3 else region
+            improved_letters = self._detect_letters_by_improved_templates(gray_region)
+            if improved_letters:
+                logger.info(f"OCR letters: {result['letters']} ({len(result['letters'])})")
+                logger.info(f"Improved template letters: {improved_letters} ({len(improved_letters)})")
+                # Prioritize improved template matching if it finds multiple letters
+                if len(improved_letters) > len(result['letters']):
+                    logger.info("Using improved template matching result")
+                    result['letters'] = improved_letters
+                    # Keep the AI confidence since template matching doesn't provide one
             
         except Exception as e:
             logger.warning(f"Optimized analysis failed: {e}")
@@ -299,9 +306,9 @@ class GPUOptimizedWispDetector:
         
         gray = cv2.cvtColor(region, cv2.COLOR_BGR2GRAY) if len(region.shape) == 3 else region
         
-        # Create simple templates for X, Z, V
+        # Create simple templates for X, Z, V, C
         templates = {}
-        for letter in ['X', 'Z', 'V']:
+        for letter in ['X', 'Z', 'V', 'C']:
             template = np.zeros((40, 30), dtype=np.uint8)
             cv2.putText(template, letter, (5, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.0, 255, 2)
             templates[letter] = template
@@ -319,20 +326,189 @@ class GPUOptimizedWispDetector:
                     continue
                 
                 result = cv2.matchTemplate(gray, scaled_template, cv2.TM_CCOEFF_NORMED)
-                _, max_val, _, _ = cv2.minMaxLoc(result)
+                _, max_val, _, max_loc = cv2.minMaxLoc(result)
                 
-                if max_val > 0.4:  # Reasonable threshold
-                    detected_letters.append(letter)
-                    max_confidence = max(max_confidence, max_val)
+                if max_val > 0.5:  # Higher threshold for better accuracy
+                    # For this scale, find ALL instances above threshold
+                    locations = np.where(result >= 0.5)
+                    for pt in zip(*locations[::-1]):
+                        x, y = pt
+                        score = result[y, x]
+                        
+                        # Check if too close to existing detections
+                        too_close = False
+                        for existing_x, existing_y, _, _ in detected_letters:
+                            if abs(x - existing_x) < 20 and abs(y - existing_y) < 20:
+                                too_close = True
+                                break
+                        
+                        if not too_close:
+                            detected_letters.append((x, y, letter, score))
+                            max_confidence = max(max_confidence, score)
                     break
         
         if detected_letters:
+            # Sort by absolute left to right (x-coordinate only)
+            detected_letters.sort(key=lambda x: x[0])  # Sort by x-coordinate only
             return {
-                'letters': detected_letters,
+                'letters': [letter for _, _, letter, _ in detected_letters],
                 'confidence': max_confidence
             }
         
         return None
+    
+    def _detect_letters_with_ocr(self, region: np.ndarray) -> List[str]:
+        """Detect letters using OCR and image processing"""
+        try:
+            # Convert to grayscale if needed
+            if len(region.shape) == 3:
+                gray = cv2.cvtColor(region, cv2.COLOR_BGR2GRAY)
+            else:
+                gray = region.copy()
+            
+            # Enhance contrast for better OCR
+            gray = cv2.convertScaleAbs(gray, alpha=2.0, beta=0)
+            
+            # Apply threshold to get binary image
+            _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+            
+            # Try to detect letters using contour analysis
+            letters = self._detect_letters_by_contours(binary)
+            if letters:
+                return letters
+            
+            # Fallback: try template matching with improved templates
+            return self._detect_letters_by_improved_templates(gray)
+            
+        except Exception as e:
+            logger.warning(f"OCR detection failed: {e}")
+            return []
+    
+    def _detect_letters_by_contours(self, binary_image: np.ndarray) -> List[str]:
+        """Detect letters by analyzing contours and shapes"""
+        try:
+            # Find contours
+            contours, _ = cv2.findContours(binary_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            
+            # Filter contours by size and aspect ratio
+            letter_contours = []
+            for contour in contours:
+                x, y, w, h = cv2.boundingRect(contour)
+                area = cv2.contourArea(contour)
+                
+                # Filter by reasonable letter dimensions
+                if (10 < w < 100 and 15 < h < 100 and area > 50):
+                    letter_contours.append((x, contour))
+            
+            # Sort by x-coordinate (left to right)
+            letter_contours.sort(key=lambda x: x[0])
+            
+            detected_letters = []
+            for x, contour in letter_contours:
+                # Extract letter region
+                x, y, w, h = cv2.boundingRect(contour)
+                letter_roi = binary_image[y:y+h, x:x+w]
+                
+                # Classify the letter shape
+                letter = self._classify_letter_shape(letter_roi, contour)
+                if letter:
+                    detected_letters.append(letter)
+            
+            return detected_letters
+            
+        except Exception as e:
+            logger.warning(f"Contour detection failed: {e}")
+            return []
+    
+    def _classify_letter_shape(self, letter_roi: np.ndarray, contour) -> Optional[str]:
+        """Classify letter based on shape characteristics"""
+        try:
+            # Get contour properties
+            area = cv2.contourArea(contour)
+            perimeter = cv2.arcLength(contour, True)
+            
+            if perimeter == 0:
+                return None
+                
+            # Calculate shape descriptors
+            circularity = 4 * np.pi * area / (perimeter * perimeter)
+            
+            # Get bounding rectangle
+            x, y, w, h = cv2.boundingRect(contour)
+            aspect_ratio = float(w) / h
+            
+            # Analyze the letter shape using template matching
+            best_match = None
+            best_score = 0
+            
+            for letter in ['X', 'Z', 'V', 'C']:
+                # Create template
+                template = np.zeros((40, 30), dtype=np.uint8)
+                cv2.putText(template, letter, (5, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.0, 255, 2)
+                
+                # Resize letter_roi to match template size
+                resized_roi = cv2.resize(letter_roi, (30, 40))
+                
+                # Template matching
+                result = cv2.matchTemplate(resized_roi, template, cv2.TM_CCOEFF_NORMED)
+                _, max_val, _, _ = cv2.minMaxLoc(result)
+                
+                if max_val > best_score:
+                    best_score = max_val
+                    best_match = letter
+            
+            # Return best match if confidence is high enough
+            if best_score > 0.3:
+                return best_match
+                
+            return None
+            
+        except Exception as e:
+            logger.warning(f"Letter classification failed: {e}")
+            return None
+    
+    def _detect_letters_by_improved_templates(self, gray_image: np.ndarray) -> List[str]:
+        """Improved template matching with multiple scales and positions"""
+        try:
+            detected_letters = []
+            used_positions = []  # Track used positions to avoid duplicates
+            
+            # Check each possible letter and find ALL instances
+            for letter in ['X', 'Z', 'V', 'C']:
+                # Create template
+                template = np.zeros((50, 40), dtype=np.uint8)
+                cv2.putText(template, letter, (5, 35), cv2.FONT_HERSHEY_SIMPLEX, 1.0, 255, 2)
+                
+                if template.shape[0] > gray_image.shape[0] or template.shape[1] > gray_image.shape[1]:
+                    continue
+                
+                # Find ALL matches above threshold
+                result = cv2.matchTemplate(gray_image, template, cv2.TM_CCOEFF_NORMED)
+                
+                # Find all locations where match is above threshold
+                locations = np.where(result >= 0.5)  # Higher threshold
+                
+                for pt in zip(*locations[::-1]):  # Switch x and y coordinates
+                    score = result[pt[1], pt[0]]
+                    
+                    # Check for overlap with existing detections
+                    overlap = False
+                    for used_pos in used_positions:
+                        if abs(pt[0] - used_pos[0]) < 15 and abs(pt[1] - used_pos[1]) < 15:
+                            overlap = True
+                            break
+                    
+                    if not overlap:
+                        detected_letters.append((pt[0], pt[1], letter))
+                        used_positions.append(pt)
+            
+            # Sort by absolute left to right (x-coordinate only)
+            detected_letters.sort(key=lambda x: x[0])  # Sort by x-coordinate only
+            return [letter for _, _, letter in detected_letters]
+            
+        except Exception as e:
+            logger.warning(f"Improved template matching failed: {e}")
+            return []
     
     def benchmark_performance(self, test_image: np.ndarray, iterations: int = 10) -> Dict:
         """Benchmark detection performance"""
