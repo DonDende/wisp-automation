@@ -23,13 +23,9 @@ A comprehensive automation system for wisp summoning with advanced AI-powered tr
 ### Main Scripts
 - `final_wisp_automation.py` - Complete automation system with AI detection
 - `gpu_optimized_detector.py` - GPU-optimized AI detector with hardware auto-detection
-- `wisp_ai_detector.py` - AI-powered detection system for translucent boxes
-- `train_wisp_detector.py` - Custom model training system
 
 ### Analysis Tools
-- `video_analyzer.py` - Video analysis at 15fps as requested
 - `test_detection.py` - Testing and validation tools
-- `analyze_wisp_video.py` - Comprehensive video analysis
 
 ### Configuration
 - `final_wisp_config.json` - Main configuration file
@@ -132,23 +128,7 @@ The system analyzes the first 4 seconds of video (where translucent boxes appear
 
 ## 🔧 Advanced Features
 
-### Custom Model Training
-```bash
-python train_wisp_detector.py
-```
-Trains a custom model using:
-- Real video frames from the first 4 seconds
-- Synthetic training data
-- Transfer learning from pre-trained models
 
-### Video Analysis
-```bash
-python video_analyzer.py
-```
-Analyzes video at 15fps as requested and extracts:
-- Frame-by-frame detection results
-- Timing patterns
-- Visual signatures of translucent boxes
 
 ### Debug Mode
 Enable debug mode in configuration to:
