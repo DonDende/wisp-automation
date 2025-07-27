@@ -1,0 +1,16 @@
+{
+  "detection_timeout": 8.0,
+  "max_attempts": 5,
+  "keystroke_delay_min": 0.08,
+  "keystroke_delay_max": 0.10,
+  "detection_region": null,
+  "confidence_threshold": 0.4,
+  "automation_enabled": true,
+  "debug_mode": false,
+  "save_detection_images": true,
+  "cycle_delay": 2.0,
+  "valid_letters": ["X", "Z", "V"],
+  "ai_model": "microsoft/resnet-50",
+  "gpu_optimization": true,
+  "performance_mode": "balanced"
+}
