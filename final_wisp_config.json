@@ -3,7 +3,7 @@
   "max_attempts": 5,
   "keystroke_delay_min": 0.08,
   "keystroke_delay_max": 0.10,
-  "detection_region": null,
+  "detection_region": [580, 150, 290, 100],
   "confidence_threshold": 0.4,
   "automation_enabled": true,
   "debug_mode": false,

@@ -28,15 +28,19 @@ echo Choose your option:
 echo [1] Run Full Automation
 echo [2] Test Detection Only
 echo [3] Performance Benchmark
-echo [4] Exit
+echo [4] Calibrate Detection Region
+echo [5] Debug Detection (Visual Analysis)
+echo [6] Exit
 echo.
 :start
-set /p choice="Enter your choice (1-4): "
+set /p choice="Enter your choice (1-6): "
 
 if "%choice%"=="1" goto run_automation
 if "%choice%"=="2" goto test_detection
 if "%choice%"=="3" goto benchmark
-if "%choice%"=="4" goto exit
+if "%choice%"=="4" goto calibrate_region
+if "%choice%"=="5" goto debug_detection
+if "%choice%"=="6" goto exit
 goto invalid_choice
 
 :run_automation
@@ -58,8 +62,20 @@ echo Running performance benchmark...
 python final_wisp_automation.py --benchmark
 goto end
 
+:calibrate_region
+echo.
+echo Running region calibration tool...
+python calibrate_region.py
+goto end
+
+:debug_detection
+echo.
+echo Running detection debug tool...
+python debug_detection.py
+goto end
+
 :invalid_choice
-echo Invalid choice. Please enter 1, 2, 3, or 4.
+echo Invalid choice. Please enter 1, 2, 3, 4, 5, or 6.
 pause
 goto start
 
