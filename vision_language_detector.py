@@ -143,15 +143,19 @@ class VisionLanguageWispDetector:
             
             # Analyze the caption for game interface indicators
             response_lower = response.lower()
-            game_indicators = ['game', 'interface', 'screen', 'menu', 'button', 'text', 'window', 'box', 'ui']
+            game_indicators = ['game', 'interface', 'screen', 'menu', 'button', 'text', 'window', 'box', 'ui', 'computer', 'phone', 'image']
+            letter_indicators = ['letter', 'letters', 'x', 'z', 'v', 'c']
             wisp_indicators = ['wisp', 'magic', 'spell', 'creature', 'summon']
             
             game_score = sum(1 for word in game_indicators if word in response_lower)
+            letter_score = sum(1 for word in letter_indicators if word in response_lower)
             wisp_score = sum(1 for word in wisp_indicators if word in response_lower)
             
-            # If it looks like a game interface, assume it could be a wisp box
-            confidence = min(1.0, (game_score * 0.3 + wisp_score * 0.7) / 3)
-            detected = confidence > 0.2 or game_score > 0  # Liberal detection
+            # If it mentions letters or looks like a game interface, assume it could be a wisp box
+            confidence = min(1.0, (game_score * 0.2 + letter_score * 0.6 + wisp_score * 0.8) / 4)
+            detected = confidence > 0.1 or game_score > 0 or letter_score > 0  # Very liberal detection
+            
+            logger.debug(f"Detection scores - Game: {game_score}, Letters: {letter_score}, Wisp: {wisp_score}, Confidence: {confidence:.3f}, Detected: {detected}")
             
             return {
                 'detected': detected,

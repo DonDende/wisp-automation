@@ -160,6 +160,7 @@ class FinalWispAutomation:
         """Two-stage detection: First detect full box, then analyze corner for letters"""
         self.state = AutomationState.DETECTING
         start_time = time.time()
+        corner_image = None  # Initialize to avoid scope issues
         
         try:
             # Stage 1: Detect full wisp box to confirm it exists and get template letters
@@ -233,10 +234,14 @@ class FinalWispAutomation:
                 if self.config.get('save_detection_images', False):
                     timestamp = int(result.timestamp)
                     full_debug_path = f"detection_full_{timestamp}.png"
-                    corner_debug_path = f"detection_corner_{timestamp}.png"
                     cv2.imwrite(full_debug_path, full_screen_image)
-                    cv2.imwrite(corner_debug_path, corner_image)
-                    logger.info(f"Debug images saved: {full_debug_path}, {corner_debug_path}")
+                    
+                    if corner_image is not None:
+                        corner_debug_path = f"detection_corner_{timestamp}.png"
+                        cv2.imwrite(corner_debug_path, corner_image)
+                        logger.info(f"Debug images saved: {full_debug_path}, {corner_debug_path}")
+                    else:
+                        logger.info(f"Debug image saved: {full_debug_path}")
             else:
                 self.stats['failed_detections'] += 1
                 logger.info("No wisp box detected")
