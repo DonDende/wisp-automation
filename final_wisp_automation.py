@@ -175,10 +175,30 @@ class FinalWispAutomation:
                 corner_image = self.capture_screen_region(use_corner_only=True)
                 corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
                 
+                # If AI didn't find letters in corner, try OCR as fallback
+                letters_found = corner_ai_result['letters']
+                if not letters_found:
+                    logger.info("AI found no letters in corner, trying OCR fallback...")
+                    try:
+                        # Use OCR on corner region
+                        ocr_letters = self.ai_detector.ocr_reader.readtext(corner_image)
+                        valid_letters = self.config.get('valid_letters', ['X', 'Z', 'V', 'C'])
+                        
+                        for (bbox, text, conf) in ocr_letters:
+                            if conf > 0.3:  # Lower confidence threshold for corner
+                                for char in text.upper():
+                                    if char in valid_letters and char not in letters_found:
+                                        letters_found.append(char)
+                        
+                        if letters_found:
+                            logger.info(f"OCR fallback found letters: {letters_found}")
+                    except Exception as e:
+                        logger.warning(f"OCR fallback failed: {e}")
+                
                 # Combine results: box detection from full image, letters from corner
                 result = DetectionResult(
                     detected=True,  # We know box exists from stage 1
-                    letters=corner_ai_result['letters'],  # Letters from corner analysis
+                    letters=letters_found,  # Letters from corner analysis + OCR fallback
                     confidence=full_ai_result['confidence'],  # Confidence from full box detection
                     timestamp=time.time(),
                     processing_time=time.time() - start_time,
@@ -222,7 +242,8 @@ class FinalWispAutomation:
     def execute_keystrokes(self, letters: List[str]) -> bool:
         """Execute keystrokes with precise 80-100ms delays"""
         if not letters:
-            return False
+            logger.info("No letters to execute - this is normal if no valid letters detected")
+            return True  # Don't treat empty letters as failure
         
         self.state = AutomationState.EXECUTING
         start_time = time.time()
