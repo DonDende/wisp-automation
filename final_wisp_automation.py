@@ -156,7 +156,7 @@ class FinalWispAutomation:
         start_time = time.time()
         
         try:
-            # Stage 1: Detect full wisp box to confirm it exists
+            # Stage 1: Detect full wisp box to confirm it exists and get template letters
             full_screen_image = self.capture_screen_region(use_corner_only=False)
             full_ai_result = self.ai_detector.detect_wisp_box_optimized(full_screen_image)
             
@@ -171,34 +171,34 @@ class FinalWispAutomation:
                     bbox=None
                 )
             else:
-                # Stage 2: Analyze corner region for letters
-                corner_image = self.capture_screen_region(use_corner_only=True)
-                corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
+                # Use letters from full region analysis (template matching works better on full image)
+                letters_found = full_ai_result['letters']
                 
-                # If AI didn't find letters in corner, try OCR as fallback
-                letters_found = corner_ai_result['letters']
+                # If full region didn't find letters, try corner-specific analysis
                 if not letters_found:
-                    logger.info("AI found no letters in corner, trying OCR fallback...")
-                    try:
-                        # Use OCR on corner region
-                        ocr_letters = self.ai_detector.ocr_reader.readtext(corner_image)
-                        valid_letters = self.config.get('valid_letters', ['X', 'Z', 'V', 'C'])
-                        
-                        for (bbox, text, conf) in ocr_letters:
-                            if conf > 0.3:  # Lower confidence threshold for corner
-                                for char in text.upper():
-                                    if char in valid_letters and char not in letters_found:
-                                        letters_found.append(char)
-                        
-                        if letters_found:
-                            logger.info(f"OCR fallback found letters: {letters_found}")
-                    except Exception as e:
-                        logger.warning(f"OCR fallback failed: {e}")
+                    logger.info("Full region found no letters, analyzing corner region...")
+                    corner_image = self.capture_screen_region(use_corner_only=True)
+                    corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
+                    letters_found = corner_ai_result['letters']
+                    
+                    # If corner analysis also failed, try OCR fallback on corner
+                    if not letters_found:
+                        logger.info("Corner analysis found no letters, trying OCR fallback...")
+                        try:
+                            ocr_letters = self.ai_detector._detect_letters_with_ocr(corner_image)
+                            letters_found = ocr_letters
+                            
+                            if letters_found:
+                                logger.info(f"OCR fallback found letters: {letters_found}")
+                        except Exception as e:
+                            logger.warning(f"OCR fallback failed: {e}")
+                else:
+                    logger.info(f"Using letters from full region analysis: {letters_found}")
                 
-                # Combine results: box detection from full image, letters from corner
+                # Combine results: box detection and letters from full image (preferred)
                 result = DetectionResult(
                     detected=True,  # We know box exists from stage 1
-                    letters=letters_found,  # Letters from corner analysis + OCR fallback
+                    letters=letters_found,  # Letters from full region (template matching)
                     confidence=full_ai_result['confidence'],  # Confidence from full box detection
                     timestamp=time.time(),
                     processing_time=time.time() - start_time,
