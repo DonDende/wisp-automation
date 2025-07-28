@@ -129,10 +129,16 @@ class FinalWispAutomation:
         except Exception as e:
             logger.error(f"Failed to save config: {e}")
     
-    def capture_screen_region(self) -> np.ndarray:
+    def capture_screen_region(self, use_corner_only=False) -> np.ndarray:
         """Capture screen region for detection"""
         try:
-            if self.config.get('detection_region'):
+            if use_corner_only:
+                # Capture only the corner region for letter detection
+                corner_region = [753, 193, 165, 142]  # Your specific corner
+                x, y, w, h = corner_region
+                screenshot = pyautogui.screenshot(region=(x, y, w, h))
+            elif self.config.get('detection_region'):
+                # Capture full box region for wisp box detection
                 x, y, w, h = self.config['detection_region']
                 screenshot = pyautogui.screenshot(region=(x, y, w, h))
             else:
@@ -145,26 +151,39 @@ class FinalWispAutomation:
             return np.zeros((600, 800, 3), dtype=np.uint8)
     
     def detect_wisp_box(self) -> DetectionResult:
-        """Detect wisp summoning box using AI"""
+        """Two-stage detection: First detect full box, then analyze corner for letters"""
         self.state = AutomationState.DETECTING
         start_time = time.time()
         
         try:
-            # Capture screen
-            screen_image = self.capture_screen_region()
+            # Stage 1: Detect full wisp box to confirm it exists
+            full_screen_image = self.capture_screen_region(use_corner_only=False)
+            full_ai_result = self.ai_detector.detect_wisp_box_optimized(full_screen_image)
             
-            # Use AI detector
-            ai_result = self.ai_detector.detect_wisp_box_optimized(screen_image)
-            
-            # Create detection result
-            result = DetectionResult(
-                detected=ai_result['detected'],
-                letters=ai_result['letters'],
-                confidence=ai_result['confidence'],
-                timestamp=time.time(),
-                processing_time=time.time() - start_time,
-                bbox=ai_result.get('bbox')
-            )
+            if not full_ai_result['detected']:
+                # No wisp box detected in full region
+                result = DetectionResult(
+                    detected=False,
+                    letters=[],
+                    confidence=0.0,
+                    timestamp=time.time(),
+                    processing_time=time.time() - start_time,
+                    bbox=None
+                )
+            else:
+                # Stage 2: Analyze corner region for letters
+                corner_image = self.capture_screen_region(use_corner_only=True)
+                corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
+                
+                # Combine results: box detection from full image, letters from corner
+                result = DetectionResult(
+                    detected=True,  # We know box exists from stage 1
+                    letters=corner_ai_result['letters'],  # Letters from corner analysis
+                    confidence=full_ai_result['confidence'],  # Confidence from full box detection
+                    timestamp=time.time(),
+                    processing_time=time.time() - start_time,
+                    bbox=full_ai_result.get('bbox')
+                )
             
             # Update statistics
             if result.detected:
@@ -174,11 +193,14 @@ class FinalWispAutomation:
                 
                 logger.info(f"AI detected wisp box: {result.letters} (confidence: {result.confidence:.3f})")
                 
-                # Save debug image if enabled
+                # Save debug images if enabled
                 if self.config.get('save_detection_images', False):
-                    debug_path = f"detection_{int(result.timestamp)}.png"
-                    cv2.imwrite(debug_path, screen_image)
-                    logger.info(f"Debug image saved: {debug_path}")
+                    timestamp = int(result.timestamp)
+                    full_debug_path = f"detection_full_{timestamp}.png"
+                    corner_debug_path = f"detection_corner_{timestamp}.png"
+                    cv2.imwrite(full_debug_path, full_screen_image)
+                    cv2.imwrite(corner_debug_path, corner_image)
+                    logger.info(f"Debug images saved: {full_debug_path}, {corner_debug_path}")
             else:
                 self.stats['failed_detections'] += 1
                 logger.info("No wisp box detected")
