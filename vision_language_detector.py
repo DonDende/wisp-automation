@@ -34,17 +34,25 @@ class VisionLanguageWispDetector:
         
     def _detect_best_device(self) -> torch.device:
         """Detect the best available device"""
+        logger.info("🔍 Scanning for available hardware...")
+        
         if torch.cuda.is_available():
             device = torch.device('cuda')
             gpu_name = torch.cuda.get_device_name(0)
             gpu_memory = torch.cuda.get_device_properties(0).total_memory / 1e9
-            logger.info(f"GPU found: {gpu_name} ({gpu_memory:.1f}GB)")
+            logger.info(f"🚀 NVIDIA GPU found: {gpu_name} ({gpu_memory:.1f}GB)")
             return device
         elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
-            logger.info("Apple Silicon GPU (MPS) detected")
+            logger.info("🍎 Apple Silicon GPU (MPS) detected")
             return torch.device('mps')
         else:
-            logger.info("Using CPU")
+            import psutil
+            cpu_count = psutil.cpu_count()
+            cpu_freq = psutil.cpu_freq()
+            logger.info(f"💻 No GPU detected - Using CPU ({cpu_count} cores)")
+            if cpu_freq:
+                logger.info(f"   CPU frequency: {cpu_freq.current:.0f} MHz")
+            logger.info("   Note: For better performance, consider running on a GPU-enabled system")
             return torch.device('cpu')
     
     def _load_model(self):
@@ -62,7 +70,11 @@ class VisionLanguageWispDetector:
             if self.use_gpu:
                 # Enable optimizations for GPU
                 self.model = self.model.half()  # Use FP16 for speed
-                logger.info("GPU optimizations enabled (FP16)")
+                logger.info("🚀 GPU optimizations enabled (FP16)")
+            else:
+                # CPU optimizations
+                torch.set_num_threads(4)  # Limit threads for better performance
+                logger.info("💻 CPU optimizations enabled (4 threads)")
             
             self.model.eval()  # Set to evaluation mode
             logger.info("Vision-language model loaded successfully")

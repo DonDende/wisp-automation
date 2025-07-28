@@ -48,18 +48,25 @@ class GPUOptimizedWispDetector:
         
     def _detect_best_device(self) -> torch.device:
         """Detect the best available device"""
+        logger.info("🔍 Scanning for available hardware...")
+        
         if torch.cuda.is_available():
             device = torch.device('cuda')
             gpu_name = torch.cuda.get_device_name(0)
             gpu_memory = torch.cuda.get_device_properties(0).total_memory / 1e9
-            logger.info(f"GPU found: {gpu_name} ({gpu_memory:.1f}GB)")
+            logger.info(f"🚀 NVIDIA GPU found: {gpu_name} ({gpu_memory:.1f}GB)")
             return device
         elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
-            # Apple Silicon GPU support
-            logger.info("Apple Silicon GPU (MPS) detected")
+            logger.info("🍎 Apple Silicon GPU (MPS) detected")
             return torch.device('mps')
         else:
-            logger.info("No GPU detected, using CPU with optimizations")
+            import psutil
+            cpu_count = psutil.cpu_count()
+            cpu_freq = psutil.cpu_freq()
+            logger.info(f"💻 No GPU detected - Using CPU ({cpu_count} cores)")
+            if cpu_freq:
+                logger.info(f"   CPU frequency: {cpu_freq.current:.0f} MHz")
+            logger.info("   Note: For better performance, consider running on a GPU-enabled system")
             return torch.device('cpu')
     
     def _load_model(self):
@@ -94,9 +101,11 @@ class GPUOptimizedWispDetector:
                 # GPU-specific optimizations
                 torch.backends.cudnn.benchmark = True
                 torch.backends.cudnn.deterministic = False
+                logger.info("🚀 GPU optimizations enabled (cuDNN)")
             else:
                 # CPU-specific optimizations
                 torch.set_num_threads(4)  # Optimize for multi-core CPU
+                logger.info("💻 CPU optimizations enabled (4 threads)")
             
             logger.info("Model loaded and optimized successfully")
             
