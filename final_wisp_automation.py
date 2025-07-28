@@ -27,6 +27,7 @@ import random
 
 # Import our optimized detector
 from gpu_optimized_detector import GPUOptimizedWispDetector
+from vision_language_detector import VisionLanguageWispDetector
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -61,9 +62,14 @@ class FinalWispAutomation:
         self.config_file = Path(config_file)
         self.config = self._load_config()
         
-        # Initialize AI detector
-        logger.info("Initializing AI-powered wisp detector...")
-        self.ai_detector = GPUOptimizedWispDetector()
+        # Initialize AI detector - use vision-language model for better understanding
+        logger.info("Initializing vision-language wisp detector...")
+        try:
+            self.ai_detector = VisionLanguageWispDetector()
+            logger.info("Using vision-language model for instruction-based detection")
+        except Exception as e:
+            logger.warning(f"Vision-language model failed, falling back to GPU detector: {e}")
+            self.ai_detector = GPUOptimizedWispDetector()
         
         # Automation parameters
         self.keystroke_delay_range = (0.08, 0.10)  # 80-100ms range
@@ -176,20 +182,30 @@ class FinalWispAutomation:
                 
                 # If full region didn't find letters, try corner-specific analysis
                 if not letters_found:
-                    logger.info("Full region found no letters, analyzing corner region...")
+                    logger.info("Full region found no letters, analyzing corner region with VLM...")
                     corner_image = self.capture_screen_region(use_corner_only=True)
-                    corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
-                    letters_found = corner_ai_result['letters']
+                    
+                    # Use vision-language model's corner analysis if available
+                    if hasattr(self.ai_detector, 'analyze_corner_region'):
+                        corner_result = self.ai_detector.analyze_corner_region(corner_image)
+                        letters_found = corner_result['letters']
+                        if letters_found:
+                            logger.info(f"VLM corner analysis found letters: {letters_found}")
+                    else:
+                        # Fallback to regular detection
+                        corner_ai_result = self.ai_detector.detect_wisp_box_optimized(corner_image)
+                        letters_found = corner_ai_result['letters']
                     
                     # If corner analysis also failed, try OCR fallback on corner
                     if not letters_found:
                         logger.info("Corner analysis found no letters, trying OCR fallback...")
                         try:
-                            ocr_letters = self.ai_detector._detect_letters_with_ocr(corner_image)
-                            letters_found = ocr_letters
-                            
-                            if letters_found:
-                                logger.info(f"OCR fallback found letters: {letters_found}")
+                            if hasattr(self.ai_detector, '_detect_letters_with_ocr'):
+                                ocr_letters = self.ai_detector._detect_letters_with_ocr(corner_image)
+                                letters_found = ocr_letters
+                                
+                                if letters_found:
+                                    logger.info(f"OCR fallback found letters: {letters_found}")
                         except Exception as e:
                             logger.warning(f"OCR fallback failed: {e}")
                 else:
