@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 class VisionLanguageWispDetector:
     """Vision-Language Model that can follow instructions to analyze wisp boxes and corners"""
     
-    def __init__(self, model_name: str = "Salesforce/blip-image-captioning-base"):
+    def __init__(self, model_name: str = "Salesforce/blip-image-captioning-large"):
         """Initialize with a vision-language model that can understand instructions"""
         self.model_name = model_name
         
@@ -112,32 +112,31 @@ class VisionLanguageWispDetector:
     def _analyze_for_wisp_box(self, image: Image.Image) -> Dict:
         """Use VLM to detect if this is a wisp summoning interface"""
         try:
-            # Instruction for wisp box detection
-            prompt = "Is this a game interface showing a wisp summoning box or magical creature summoning interface?"
-            
-            # Process with the model
-            inputs = self.processor(image, prompt, return_tensors="pt").to(self.device)
+            # Use unconditional image captioning (no prompt) for better results
+            inputs = self.processor(image, return_tensors="pt").to(self.device)
             
             with torch.no_grad():
                 if self.use_gpu:
                     with torch.cuda.amp.autocast():
-                        outputs = self.model.generate(**inputs, max_new_tokens=20, num_beams=4, do_sample=False)
+                        outputs = self.model.generate(**inputs, max_new_tokens=30, num_beams=4, do_sample=False)
                 else:
-                    outputs = self.model.generate(**inputs, max_new_tokens=20, num_beams=4, do_sample=False)
+                    outputs = self.model.generate(**inputs, max_new_tokens=30, num_beams=4, do_sample=False)
             
             # Decode the response
             response = self.processor.decode(outputs[0], skip_special_tokens=True)
+            logger.info(f"Wisp box analysis: '{response}'")
             
-            # Remove the prompt from the response if it's repeated
-            if prompt.lower() in response.lower():
-                response = response.replace(prompt, "").strip()
+            # Analyze the caption for game interface indicators
+            response_lower = response.lower()
+            game_indicators = ['game', 'interface', 'screen', 'menu', 'button', 'text', 'window', 'box', 'ui']
+            wisp_indicators = ['wisp', 'magic', 'spell', 'creature', 'summon']
             
-            logger.info(f"Wisp box analysis response: '{response}'")
+            game_score = sum(1 for word in game_indicators if word in response_lower)
+            wisp_score = sum(1 for word in wisp_indicators if word in response_lower)
             
-            # For now, assume detection based on image content (BLIP might not answer questions well)
-            # We'll rely on the fact that if we're analyzing this region, it likely contains a wisp box
-            detected = True  # Assume detection since we're in the detection pipeline
-            confidence = 0.8  # High confidence for now
+            # If it looks like a game interface, assume it could be a wisp box
+            confidence = min(1.0, (game_score * 0.3 + wisp_score * 0.7) / 3)
+            detected = confidence > 0.2 or game_score > 0  # Liberal detection
             
             return {
                 'detected': detected,
@@ -152,27 +151,19 @@ class VisionLanguageWispDetector:
     def _analyze_for_letters(self, image: Image.Image) -> Dict:
         """Use VLM to specifically look for letters X, Z, V, C in the image"""
         try:
-            # Use image captioning instead of question answering for better results
-            prompt = "letters in image"
-            
-            # Process with the model
-            inputs = self.processor(image, prompt, return_tensors="pt").to(self.device)
+            # Use unconditional captioning to describe what's in the image
+            inputs = self.processor(image, return_tensors="pt").to(self.device)
             
             with torch.no_grad():
                 if self.use_gpu:
                     with torch.cuda.amp.autocast():
-                        outputs = self.model.generate(**inputs, max_new_tokens=15, num_beams=4, do_sample=False)
+                        outputs = self.model.generate(**inputs, max_new_tokens=25, num_beams=4, do_sample=False)
                 else:
-                    outputs = self.model.generate(**inputs, max_new_tokens=15, num_beams=4, do_sample=False)
+                    outputs = self.model.generate(**inputs, max_new_tokens=25, num_beams=4, do_sample=False)
             
             # Decode the response
             response = self.processor.decode(outputs[0], skip_special_tokens=True)
-            
-            # Remove the prompt from the response if it's repeated
-            if prompt.lower() in response.lower():
-                response = response.replace(prompt, "").strip()
-            
-            logger.info(f"Letter analysis response: '{response}'")
+            logger.info(f"Letter analysis: '{response}'")
             
             # Extract letters from response
             letters = self._extract_letters_from_response(response)
@@ -194,10 +185,35 @@ class VisionLanguageWispDetector:
         # Look for letters in the response
         response_upper = response.upper()
         
+        # More aggressive letter detection
         for letter in valid_letters:
-            # Look for the letter as a standalone character or word
-            if re.search(r'\b' + letter + r'\b', response_upper) or letter in response_upper:
-                if letter not in found_letters:
+            # Look for the letter in various contexts
+            patterns = [
+                r'\b' + letter + r'\b',  # Standalone letter
+                r'LETTER\s+' + letter,   # "letter X"
+                r'TEXT\s+' + letter,     # "text X"
+                letter + r'\s',          # Letter followed by space
+                r'\s' + letter + r'\s',  # Letter surrounded by spaces
+                letter                   # Just the letter anywhere
+            ]
+            
+            for pattern in patterns:
+                if re.search(pattern, response_upper):
+                    if letter not in found_letters:
+                        found_letters.append(letter)
+                    break
+        
+        # Also look for common descriptions that might indicate letters
+        letter_descriptions = {
+            'X': ['cross', 'x-shaped', 'times', 'multiply'],
+            'Z': ['zigzag', 'z-shaped', 'zed'],
+            'V': ['v-shaped', 'victory', 'chevron'],
+            'C': ['c-shaped', 'crescent', 'curve']
+        }
+        
+        for letter, descriptions in letter_descriptions.items():
+            for desc in descriptions:
+                if desc.upper() in response_upper and letter not in found_letters:
                     found_letters.append(letter)
         
         return found_letters
@@ -211,27 +227,19 @@ class VisionLanguageWispDetector:
             else:
                 pil_image = Image.fromarray(image).convert('RGB')
             
-            # Use simple captioning for corner analysis
-            prompt = "text and letters"
-            
-            # Process with the model
-            inputs = self.processor(pil_image, prompt, return_tensors="pt").to(self.device)
+            # Use unconditional captioning for corner analysis
+            inputs = self.processor(pil_image, return_tensors="pt").to(self.device)
             
             with torch.no_grad():
                 if self.use_gpu:
                     with torch.cuda.amp.autocast():
-                        outputs = self.model.generate(**inputs, max_new_tokens=15, num_beams=4, do_sample=False)
+                        outputs = self.model.generate(**inputs, max_new_tokens=20, num_beams=4, do_sample=False)
                 else:
-                    outputs = self.model.generate(**inputs, max_new_tokens=15, num_beams=4, do_sample=False)
+                    outputs = self.model.generate(**inputs, max_new_tokens=20, num_beams=4, do_sample=False)
             
             # Decode the response
             response = self.processor.decode(outputs[0], skip_special_tokens=True)
-            
-            # Remove the prompt from the response if it's repeated
-            if prompt.lower() in response.lower():
-                response = response.replace(prompt, "").strip()
-            
-            logger.info(f"Corner analysis response: '{response}'")
+            logger.info(f"Corner analysis: '{response}'")
             
             # Extract letters from response
             letters = self._extract_letters_from_response(response)

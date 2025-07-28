@@ -62,10 +62,14 @@ class FinalWispAutomation:
         self.config_file = Path(config_file)
         self.config = self._load_config()
         
-        # Initialize AI detector - use the working template matching approach
-        logger.info("Initializing GPU-optimized wisp detector with template matching...")
-        self.ai_detector = GPUOptimizedWispDetector()
-        logger.info("Using template matching system (this was working perfectly!)")
+        # Initialize AI detector - use vision-language model with fixes
+        logger.info("Initializing vision-language wisp detector...")
+        try:
+            self.ai_detector = VisionLanguageWispDetector()
+            logger.info("Using vision-language model for instruction-based detection")
+        except Exception as e:
+            logger.warning(f"Vision-language model failed, falling back to GPU detector: {e}")
+            self.ai_detector = GPUOptimizedWispDetector()
         
         # Automation parameters
         self.keystroke_delay_range = (0.08, 0.10)  # 80-100ms range
