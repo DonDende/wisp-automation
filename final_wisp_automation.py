@@ -8,8 +8,14 @@ Complete automation system for wisp summoning
 import cv2
 import numpy as np
 import torch
-import pyautogui
+import os
 import time
+
+# Set display for headless environments
+if not os.environ.get('DISPLAY'):
+    os.environ['DISPLAY'] = ':0'
+
+import pyautogui
 import json
 import logging
 from pathlib import Path
@@ -209,9 +215,42 @@ class FinalWispAutomation:
                     time.sleep(delay)
                     logger.info(f"Delay: {delay*1000:.1f}ms")
                 
-                # Press the key
-                pyautogui.press(letter.lower())
-                logger.info(f"Pressed: {letter}")
+                # Press the key - try multiple methods for reliability
+                success = False
+                
+                # Method 1: PyAutoGUI (original)
+                try:
+                    pyautogui.press(letter.lower())
+                    logger.info(f"Pressed: {letter} (pyautogui)")
+                    success = True
+                except Exception as e:
+                    logger.warning(f"PyAutoGUI failed for {letter}: {e}")
+                
+                # Method 2: keyboard library fallback
+                if not success:
+                    try:
+                        import keyboard
+                        keyboard.press_and_release(letter.lower())
+                        logger.info(f"Pressed: {letter} (keyboard)")
+                        success = True
+                    except Exception as e:
+                        logger.warning(f"keyboard library failed for {letter}: {e}")
+                
+                # Method 3: pynput fallback
+                if not success:
+                    try:
+                        from pynput.keyboard import Controller
+                        controller = Controller()
+                        controller.press(letter.lower())
+                        controller.release(letter.lower())
+                        logger.info(f"Pressed: {letter} (pynput)")
+                        success = True
+                    except Exception as e:
+                        logger.warning(f"pynput failed for {letter}: {e}")
+                
+                if not success:
+                    logger.error(f"All keystroke methods failed for {letter}")
+                    raise Exception(f"Could not send keystroke: {letter}")
             
             execution_time = time.time() - start_time
             
